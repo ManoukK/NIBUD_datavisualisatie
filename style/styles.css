@@ -1,0 +1,124 @@
+:root {
+    /* kleuren */
+    --donkerBlauw: #2699FB;
+    --middelBlauw: #BCE0FD;
+    --lichtBlauw: #F1F9FF;
+    --wit: #ffffff;
+    --zwart: #000000;
+    --donkerGrijs: #7F7F7F;
+    --grijs: #707070;
+    --schaduw: #C4C4C4;
+    --borderGrijs: #F1F1F1;
+
+    /* afstanden */
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
+}
+
+body {
+    background-color: var(--wit);
+}
+
+nav {
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+svg {
+    background-color: var(--donkerBlauw);
+    margin-top: -1.5em;
+}
+
+.algemeneKnopStyling {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+form {
+    position: absolute;
+    background-color: var(--wit);
+    left: 0em;
+    right: 0em;
+    box-shadow: 0px 4px 7px #2699FB29;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+fieldset {
+    position: relative;
+    margin: 2em;
+    border: none;
+}
+
+legend {
+    position: relative;
+    font-size: 2em;
+    color: var(--donkerGrijs);
+    padding-top: 1em;
+}
+
+label, input {
+    position: relative;
+    display: block;
+}
+
+label {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: var(--leesTekst);
+    color: var(--donkerBlauw);
+}
+
+input {
+    height: 3em;
+    width: 95%;
+    background-color: var(--lichtBlauw);
+    border: 2px solid #BCE0FD;
+    border-radius: 10px;
+    padding-left: 1em;
+    font-size: var(--leesTekst);
+    color: var(--donkerBlauw);
+}
+
+div {
+    position: relative;
+    margin-top: 4em;
+}
+
+#hoofdKnop {
+    color: var(--wit);
+    background-color: var(--donkerBlauw);
+    border-radius: 4px;
+    box-shadow: 0px 3px 0px #007FEB;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: absolute;
+    margin-left: 10.5em;
+}
+
+#subKnop {
+    color: var(--donkerBlauw);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    position: absolute;
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-left: -1em;
+}
+
+select {
+    height: 3em;
+    width: 101%;
+    background-color: var(--wit);
+    border: 2px solid var(--borderGrijs);
+    border-radius: 10px;
+    padding-left: 1em;
+    font-size: var(--leesTekst);
+    color: var(--grijs);
+    box-shadow: 0px 3px 0px var(--schaduw);
+}

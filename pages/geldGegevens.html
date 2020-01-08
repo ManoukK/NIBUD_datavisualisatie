@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIBUD tool</title>
+    <link rel="stylesheet" type="text/css" href="/style/styles.css">
+    <link rel="stylesheet" type="text/css" href="/style/stylesGeldGegevens.css">
+
+</head>
+<body>
+    <nav>
+        <svg style="width:100%;height:45;">
+            <line x1="100%" y1="100%" x2="0%" y2="100%" style="stroke:#F1F9FF;stroke-width: 45;"></line>
+        </svg>
+    </nav>
+
+    <form>
+        <fieldset>
+            <img src="/images/placeholder.png"> 
+            <h1>Situatie</h1>
+            <h2>Vaste lasten</h2>
+            <h2>Uitgaven</h2>
+
+            <label for="huishouden">Huishouden</label>
+            <select id="huishouden">
+                    <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="alleenstaand">Alleenstaand</option>
+                <option value="eenouder">Eenouder</option>
+                <option value="paar">Paar</option>
+                <option value="ouderpaar">Ouder paar</option>
+            </select>
+
+            <div>
+                <label>Aantal kinderen</label>
+                <span>
+                    <input type="radio" id="kind0" name="aantalkinderen" value="kind0" class="kindInput">
+                    <label for="kind0" class="kindLabel">0</label>
+                </span>
+                <span>
+                    <input type="radio" id="kind1" name="aantalkinderen" value="kind1" class="kindInput">
+                    <label for="kind1" class="kindLabel">1</label>
+                </span>
+                <span>
+                    <input type="radio" id="kind2" name="aantalkinderen" value="kind2" class="kindInput">
+                    <label for="kind2" class="kindLabel">2</label>
+                </span>
+                <span>
+                    <input type="radio" id="kind3" name="aantalkinderen" value="kind3" class="kindInput">
+                    <label for="kind3" class="kindLabel">3</label>
+                </span>
+            </div>
+
+            <label for="wonen">Woonsituatie</label>
+            <select id="wonen">
+                <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="gemiddeldeHuur">Gemiddelde huur</option>
+                <option value="anderhalfGemiddeldeHuur">1.5 keer gemiddelde huur</option>
+                <option value="gemiddeldeHypotheek">Gemiddelde hypotheek</option>
+                <option value="anderhalfGemiddeldeHypotheek">1.5 keer gemiddelde hypotheek</option>
+            </select>
+
+            
+            <label for="inkomen">Inkomen per maand</label>
+            <input id="inkomen" type="number" name="inkomen" value="" min="1">
+<!-- 
+            <div>
+                <a id="subKnop" class="algemeneKnopStyling" href="/pages/login.html">Inloggen</a>
+                <a id="hoofdKnop" class="algemeneKnopStyling" href="">Aanmelden</a>
+            </div> -->
+
+        </fieldset> 
+        
+    </form>
+    
+</body>
+</html>

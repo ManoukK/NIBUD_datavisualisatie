@@ -1,0 +1,87 @@
+:root {
+    /* kleuren */
+    --donkerBlauw: #2699FB;
+    --middelBlauw: #BCE0FD;
+    --lichtBlauw: #F1F9FF;
+    --wit: #ffffff;
+    --zwart: #000000;
+    --donkerGrijs: #7F7F7F;
+    --grijs: #707070;
+    --schaduw: #C4C4C4;
+    --borderGrijs: #F1F1F1;
+
+    /* afstanden */
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    height: 3em;
+}
+
+form {
+    width: 25em;
+    height: 45em;
+    margin-bottom: 10em;
+}
+
+h1, h2 {
+    color: var(--donkerBlauw);
+    font-size: var(--leesTekst);
+    font-weight: 100;
+    margin-top: 0em;
+    display: inline;
+}
+
+h2 {
+    margin-left: 3.7em;
+}
+
+#hoofdKnop {
+    margin-left: 9.5em;
+}
+
+div {
+    margin-top: 0em;
+}
+
+.kindLabel {
+    color: var(--grijs);
+    margin: 0em;
+    display: inline;
+    padding: 0.5em 2em;
+    box-shadow: 0px 3px 0px #C4C4C4;
+    border: 1px solid #F1F1F1;
+    margin-top: -1em;
+}
+
+.kindLabel[for="kind1"], .kindLabel[for="kind2"], .kindLabel[for="kind3"] {
+    margin-left: -0.5em;
+}
+
+.kindInput {
+    opacity: 0;
+    margin: 0em;
+    margin-top: -1em;
+    width: 0em;
+    display: inline;
+}
+
+.kindInput:checked ~ label {
+    background-color: yellowgreen;
+}
+
+#inkomen {
+    height: 3em;
+    width: 95%;
+    background-color: var(--wit);
+    border: 2px solid var(--borderGrijs);
+    border-radius: 10px;
+    padding-left: 1em;
+    font-size: var(--leesTekst);
+    color: var(--grijs);
+    box-shadow: 0px 3px 0px var(--schaduw);
+}

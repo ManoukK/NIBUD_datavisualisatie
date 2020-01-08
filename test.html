@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+		<link rel="stylesheet" type="text/css" href="style/styles2.css">
+<script>
+window.onload = function () {
+	
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	
+	title:{
+		text:"December 2019"
+	},
+	axisX:{
+		interval: 1
+	},
+	axisY2:{
+		//interlacedColor: "rgba(1,77,101,.2)",
+		gridColor: "rgba(1,77,101,.1)",
+		title: "Aantal procenten"
+	},
+	data: [{
+		type: "bar",
+		name: "Posten",
+		axisYType: "secondary",
+		color: "#014D65",
+		dataPoints: [
+			{ y: 4, label: "Overige huishoudelijke uitgaven" },
+			{ y: -16, label: "Voeding" },
+			{ y: -10, label: "Vrijetijduitgaven" },
+			{ y: 23, label: "Niet-vergoede ziektekosten" },
+			{ y: 0, label: "Onderhoud huis en tuin" },
+			{ y: 36, label: "Inventaris" },
+			{ y: -65, label: "Kleding en schoenen" },
+			{ y: 12, label: "Vervoer" },
+			{ y: 16.5, label: "Contributies en abonnementen" },
+			{ y: 0, label: "Kinderopvang" },
+			{ y: 0, label: "Onderwijs" },
+			{ y: 51, label: "Verzekeringen" },
+			{ y: 47, label: "Telefoon, tv, internet" },
+			{ y: -6, label: "Lokale lasten" },
+			{ y: 2, label: "Water" },
+			{ y: -27, label: "Elektriciteit" },
+			{ y: 49, label: "Gas" }
+		]
+	}]
+
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+	<!-- <svg width="400" height="110">
+		<rect width="300" height="100"/>
+	</svg> -->
+
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

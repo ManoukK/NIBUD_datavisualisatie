@@ -1,0 +1,29 @@
+:root {
+    /* kleuren */
+    --donkerBlauw: #2699FB;
+    --middelDonkerBlauw: #7FC4FD;
+    --middelBlauw: #BCE0FD;
+    --lichtBlauw: #F1F9FF;
+    --wit: #ffffff;
+    --zwart: #000000;
+    --donkerGrijs: #7F7F7F;
+    --grijs: #707070;
+
+    /* afstanden */
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
+}
+
+form {
+    width: 25em;
+    height: 30em;
+}
+
+#wachtwoordVergeten {
+    position: absolute;
+    color: var(--middelDonkerBlauw);
+    text-decoration: none;
+    margin-left: 10.5em;
+    margin-top: 0.5em;
+}

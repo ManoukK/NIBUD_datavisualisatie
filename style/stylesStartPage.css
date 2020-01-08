@@ -1,0 +1,53 @@
+:root {
+    --donkerBlauw: #2699FB;
+    --middelBlauw: #BCE0FD;
+    --lichtBlauw: #F1F9FF;
+    --wit: #ffffff;
+    --zwart: #000000;
+    --grijs: #707070;
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
+}
+
+body {
+    background-color: var(--wit);
+}
+
+img {
+    position: absolute;
+    width: 35%;
+    margin-left: 8em;
+    margin-top: 7em;
+    display: inline-block;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 52%;
+    margin-right: 10em;
+    color: var(--donkerBlauw);
+    font-size: var(--hoofdTitel);
+}
+
+p {
+    position: absolute;
+    display: inline-block;
+    margin-left: 52%;
+    margin-right: 15em;
+    margin-top: 14em;
+    color: var(--grijs);
+    font-size: var(--leesTekst);
+}
+
+div {
+    position: absolute;
+    margin-left: 52%;   
+    margin-top: 22em;
+}
+
+#subKnop {
+    margin-left: 2em;
+}
+

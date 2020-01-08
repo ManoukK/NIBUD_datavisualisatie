@@ -1,0 +1,85 @@
+:root {
+    /* kleuren */
+    --donkerBlauw: #2699FB;
+    --middelDonkerBlauw: #7FC4FD;
+    --middelBlauw: #BCE0FD;
+    --lichtBlauw: #F1F9FF;
+    --wit: #ffffff;
+    --zwart: #000000;
+    --donkerGrijs: #7F7F7F;
+    --grijs: #707070;
+
+    /* afstanden */
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
+}
+
+form {
+    width: 25em;
+    height: 23em;
+}
+
+fieldset {
+    position: relative;
+    margin: 2em;
+    border: none;
+}
+
+legend {
+    position: relative;
+    font-size: 2em;
+    color: var(--donkerGrijs);
+    padding-top: 1em;
+}
+
+label, input {
+    position: relative;
+    display: block;
+}
+
+label {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: var(--leesTekst);
+    color: var(--donkerBlauw);
+}
+
+input {
+    height: 3em;
+    width: 95%;
+    background-color: var(--lichtBlauw);
+    border: 2px solid #BCE0FD;
+    border-radius: 10px;
+    padding-left: 1em;
+    font-size: var(--leesTekst);
+    color: var(--donkerBlauw);
+}
+
+div {
+    position: relative;
+    margin-top: 3em;
+}
+
+#subKnop {
+    position: absolute;
+    margin-top: 1em;
+    margin-right: 3em;
+    margin-left: -1em;
+}
+
+#hoofdKnop {
+    position: absolute;
+    margin-left: 9.5em;
+}
+
+
+p {
+    color: var(--donkerGrijs);
+    padding-left: 0.3em;
+    margin-top: 2em;
+}
+
+#melding {
+    height: 19em;
+}
