@@ -140,7 +140,11 @@ select {
     box-shadow: 0px 3px 0px var(--schaduw);
 }
 
+<<<<<<< HEAD
 form {
+=======
+.form-box {
+>>>>>>> 723e3198ec6b3e4a86c8d29781ae25bc5d57ac70
     border-radius: 0.1875em; /* 3/16 */
     margin: 6.9em auto;
     width: 28em;
@@ -156,7 +160,11 @@ form {
 
 @media only screen and (max-width: 30em) {
   
+<<<<<<< HEAD
     form {
+=======
+    .form-box {
+>>>>>>> 723e3198ec6b3e4a86c8d29781ae25bc5d57ac70
       max-width: 90vw;
   
     }
@@ -164,7 +172,11 @@ form {
   
   @media only screen and (min-width: 30em) and (max-width: 60em) {
   
+<<<<<<< HEAD
     form {
+=======
+    .form-box {
+>>>>>>> 723e3198ec6b3e4a86c8d29781ae25bc5d57ac70
       max-width: 80vw;
     }
   }
