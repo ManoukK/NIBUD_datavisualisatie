@@ -16,6 +16,11 @@
     --leesTekst: 1em;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
 body {
     background-color: var(--wit);
 }
@@ -98,6 +103,17 @@ div {
     padding-bottom: 1em;
     position: absolute;
     margin-left: 10.5em;
+    opacity: 1;    
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+#hoofdKnop:hover, #hoofdKnop:focus, #subKnop:hover, #subKnop:focus {
+    opacity: 0.8;
 }
 
 #subKnop {
@@ -109,6 +125,7 @@ div {
     margin-top: 1em;
     margin-right: 3em;
     margin-left: -1em;
+    text-transform: uppercase;
 }
 
 select {
