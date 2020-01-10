@@ -27,3 +27,7 @@ form {
     margin-left: 10.5em;
     margin-top: 0.5em;
 }
+
+.hide {
+    display: none;
+}

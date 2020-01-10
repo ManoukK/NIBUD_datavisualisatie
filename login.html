@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>NIBUD tool</title>
     <link rel="stylesheet" type="text/css" href="style/styles.css">
     <link rel="stylesheet" type="text/css" href="style/stylesInlog.css">
 </head>
+
 <body>
     <nav>
         <svg style="width:100%;height:45;">
@@ -13,7 +15,63 @@
         </svg>
     </nav>
 
-    <form>
+    <div class="login-box">
+        <form class="login" action="cijfersInvullenStapEen.html">
+            <fieldset>
+                <legend>Inloggen</legend>
+                
+                <label for="email">Email</label>
+                <input type="email" name="login" id="email" placeholder="naam@email.nl" required>
+                
+                <label for="wachtwoord">Wachtwoord</label>
+                <input type="password" name="login" id="wachtwoord" placeholder="********" required minlength="8"
+                    maxlength="24">
+                <a class="vergeten">wachtwoord vergeten?</a>
+                
+            </br>
+                <a id="subKnop" class="aanmelden-registreren">aanmelden</a>
+                <a id="hoofdKnop" type="submit" value="aanmelden">Log in</a>
+            </fieldset>
+        </form>
+
+        <form class="aanmelden hide" action="cijfersInvullenStapEen.html">
+            <fieldset>
+                <legend>Aanmelden</legend>
+                
+                <label for="naam">Naam</label>
+                <input id="naam" type="text" name="login" value="">
+
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="login" value="">
+
+                <label for="wachtwoord">Wachtwoord</label>
+                <input id="wachtwoord" type="password" name="login" value="">
+
+                <label for="wachtwoord">Herhaal wachtwoord</label>
+                <input id="wachtwoord" type="password" name="login" value="">
+
+                </br>
+                <a id="subKnop" class="aanmelden-registreren">log in</a>
+                <a id="hoofdKnop" type="submit" value="aanmelden">aanmelden</a>
+
+            </fieldset>
+        </form>
+
+        <form class="forgotten hide" action="login.html">
+            <fieldset>
+                <legend>Wachtwoord vergeten</legend>
+                
+                <label for="email">Email</label>
+                <input type="email" name="login" placeholder="naam@email.nl" required>
+                <input type="email" name="login" placeholder="naam@email.nl" required>
+                
+                <a id="subKnop" class="vergeten">inloggen?</a>
+                <a id="hoofdKnop" class="standaardbtn" type="submit" value="verzenden">E-mail wachtwoord reset link</a>
+
+            </fieldset>
+        </form>
+    </div>
+    <!-- <form class="form-inloggen">
         <fieldset>
             <legend>Login</legend>
 
@@ -26,13 +84,41 @@
             <a id="wachtwoordVergeten" href="wwVergeten.html">Wachtwoord vergeten?</a>
 
             <div>
-                <a id="subKnop" class="algemeneKnopStyling" href="aanmelden.html">Aanmelden</a>
+                <a id="subKnop" class="algemeneKnopStyling aanmelden-knop">Aanmelden</a>
                 <a id="hoofdKnop" class="algemeneKnopStyling" href="">Inloggen</a>
             </div>
 
-        </fieldset> 
-        
+        </fieldset>
+
     </form>
-    
+
+    <form class="form-aanmelden hide">
+        <fieldset>
+            <legend>Aanmelden</legend>
+
+            <label for="naam">Naam</label>
+            <input id="naam" type="text" name="login" value="">
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="login" value="">
+
+            <label for="wachtwoord">Wachtwoord</label>
+            <input id="wachtwoord" type="password" name="login" value="">
+
+            <label for="wachtwoord">Herhaal wachtwoord</label>
+            <input id="wachtwoord" type="password" name="login" value="">
+
+            <div>
+                <a id="subKnop" class="algemeneKnopStyling inloggen-knop" href="login.html">Inloggen</a>
+                <a id="hoofdKnop" class="algemeneKnopStyling" href="">Aanmelden</a>
+            </div>
+
+        </fieldset>
+
+    </form> -->
+
 </body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/signup.js"></script>
+
 </html>
