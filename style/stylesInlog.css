@@ -15,10 +15,10 @@
     --leesTekst: 1em;
 }
 
-form {
+/* form {
     width: 25em;
-    height: 30em;
-}
+    height: auto;
+} */
 
 #wachtwoordVergeten {
     position: absolute;
@@ -30,4 +30,13 @@ form {
 
 .hide {
     display: none;
+}
+
+.vergeten {
+    float: right;
+    display: block;
+}
+
+form {
+    padding-bottom: 5rem;
 }
