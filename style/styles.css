@@ -16,6 +16,11 @@
     --leesTekst: 1em;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
 body {
     background-color: var(--wit);
 }
@@ -35,7 +40,7 @@ svg {
     text-transform: uppercase;
 }
 
-form {
+/* form {
     position: absolute;
     background-color: var(--wit);
     left: 0em;
@@ -44,7 +49,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     margin-top: 4em;
-}
+} */
 
 fieldset {
     position: relative;
@@ -98,6 +103,17 @@ div {
     padding-bottom: 1em;
     position: absolute;
     margin-left: 10.5em;
+    opacity: 1;    
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+#hoofdKnop:hover, #hoofdKnop:focus, #subKnop:hover, #subKnop:focus {
+    opacity: 0.8;
 }
 
 #subKnop {
@@ -109,6 +125,7 @@ div {
     margin-top: 1em;
     margin-right: 3em;
     margin-left: -1em;
+    text-transform: uppercase;
 }
 
 select {
@@ -122,3 +139,32 @@ select {
     color: var(--grijs);
     box-shadow: 0px 3px 0px var(--schaduw);
 }
+
+form {
+    border-radius: 0.1875em; /* 3/16 */
+    margin: 6.9em auto;
+    width: 28em;
+    padding: 1.5em;
+  position: relative;
+    background: white;
+    overflow: hidden;
+    -webkit-box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
+    -moz-box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
+    box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
+    transition: ease margin .5s, ease opacity .5s;
+}
+
+@media only screen and (max-width: 30em) {
+  
+    form {
+      max-width: 90vw;
+  
+    }
+  }
+  
+  @media only screen and (min-width: 30em) and (max-width: 60em) {
+  
+    form {
+      max-width: 80vw;
+    }
+  }

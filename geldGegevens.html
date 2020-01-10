@@ -14,21 +14,18 @@
         </svg>
     </nav>
 
-    <form>
-        <fieldset>
+    <form class="form-box">
             <img src="/images/placeholder.png"> 
-            <h1>Situatie</h1>
-            <h2>Vaste lasten</h2>
-            <h2>Uitgaven</h2>
 
-            <label for="huishouden">Huishouden</label>
-            <select id="huishouden">
+        <fieldset id="formSituatie">
+                 <label for="huishouden">Huishouden</label>
+                <select id="huishouden">
                     <option value="" selected disabled hidden>Kies een optie</option>
-                <option value="alleenstaand">Alleenstaand</option>
-                <option value="eenouder">Eenouder</option>
-                <option value="paar">Paar</option>
-                <option value="ouderpaar">Ouder paar</option>
-            </select>
+                    <option value="alleenstaand">Alleenstaand</option>
+                    <option value="eenouder">Eenouder</option>
+                    <option value="paar">Paar</option>
+                    <option value="ouderpaar">Ouder paar</option>
+                </select>
 
             <div>
                 <label>Aantal kinderen</label>
@@ -36,14 +33,17 @@
                     <input type="radio" id="kind0" name="aantalkinderen" value="kind0" class="kindInput">
                     <label for="kind0" class="kindLabel">0</label>
                 </span>
+
                 <span>
                     <input type="radio" id="kind1" name="aantalkinderen" value="kind1" class="kindInput">
                     <label for="kind1" class="kindLabel">1</label>
                 </span>
+
                 <span>
                     <input type="radio" id="kind2" name="aantalkinderen" value="kind2" class="kindInput">
                     <label for="kind2" class="kindLabel">2</label>
                 </span>
+
                 <span>
                     <input type="radio" id="kind3" name="aantalkinderen" value="kind3" class="kindInput">
                     <label for="kind3" class="kindLabel">3</label>
@@ -59,18 +59,75 @@
                 <option value="anderhalfGemiddeldeHypotheek">1.5 keer gemiddelde hypotheek</option>
             </select>
 
-            
             <label for="inkomen">Inkomen per maand</label>
-            <input id="inkomen" type="number" name="inkomen" value="" min="1">
-<!-- 
-            <div>
-                <a id="subKnop" class="algemeneKnopStyling" href="/pages/login.html">Inloggen</a>
-                <a id="hoofdKnop" class="algemeneKnopStyling" href="">Aanmelden</a>
-            </div> -->
+            <input id="inkomen" class="stylePrijsInput" type="number" name="inkomen" value="" min="1">
 
+            <a>Terug</a>
+            <button>Verder</button>
         </fieldset> 
-        
+
+        <fieldset id="formVasteLasten">
+            <label for="gas">Gas</label>
+            <input id="gas" class="stylePrijsInput" type="number" name="gas" value="" min="1">
+
+            <label for="elektriciteit">Elektriciteit</label>
+            <input id="elektriciteit" class="stylePrijsInput" type="number" name="elektriciteit" value="" min="1">
+
+            <label for="water">Water</label>
+            <input id="water" class="stylePrijsInput" type="number" name="water" value="" min="1">
+
+            <label for="lokaleLasten">Lokale lasten</label>
+            <input id="lokaleLasten" class="stylePrijsInput" type="number" name="lokaleLasten" value="" min="1">
+
+            <label for="telefoonTvInternet">Telefoon, TV en internet</label>
+            <input id="telefoonTvInternet" class="stylePrijsInput" type="number" name="telefoonTvInternet" value="" min="1">
+
+            <label for="verzekeringen"> Verzekeringen</label>
+            <input id="verzekeringen" class="stylePrijsInput" type="number" name="" value="verzekeringen" min="1">
+
+            <label for="onderwijs">Onderwijs</label>
+            <input id="onderwijs" class="stylePrijsInput" type="number" name="onderwijs" value="" min="1">
+
+            <label for="kinderopvang">Kinderopvang</label>
+            <input id="kinderopvang" class="stylePrijsInput" type="number" name="kinderopvang" value="" min="1">
+
+            <label for="contributiesAbonnementen">Contributies en abonnementen</label>
+            <input id="contributiesAbonnementen" class="stylePrijsInput" type="number" name="contributiesAbonnementen" value="" min="1">
+
+            <label for="vervoer">Vervoer</label>
+            <input id="vervoer" class="stylePrijsInput" type="number" name="vervoer" value="" min="1">
+
+            <button>Terug</button>
+            <button>Verder</button>
+        </fieldset>
+
+        <fieldset id="formOverig">
+            <label for="kledingSchoenen">Kleding en schoenen</label>
+            <input id="kledingSchoenen" class="stylePrijsInput" type="number" name="kledingSchoenen" value="" min="1">
+
+            <label for="inventaris">Inventaris</label>
+            <input id="inventaris" class="stylePrijsInput" type="number" name="inventaris" value="" min="1">
+
+            <label for="onderhoudHuisTuin">Onderhoud huis en tuin</label>
+            <input id="onderhoudHuisTuin" class="stylePrijsInput" type="number" name="onderhoudHuisTuin" value="" min="1">
+
+            <label for="nietVergoedeZiektekosten">Niet vergoede ziektekosten</label>
+            <input id="nietVergoedeZiektekosten" class="stylePrijsInput" type="number" name="nietVergoedeZiektekosten" value="" min="1">
+
+            <label for="vrijetijdsuitgaven">Vrijetijdsuitgaven</label>
+            <input id="vrijetijdsuitgaven" class="stylePrijsInput" type="number" name="vrijetijdsuitgaven" value="" min="1">
+
+            <label for="voeding">Voeding</label>
+            <input id="voeding" class="stylePrijsInput" type="number" name="voeding" value="" min="1">
+
+            <label for="overigeHuishoudelijkeUitgaven">Overige huishoudelijke uitgaven</label>
+            <input id="overigeHuishoudelijkeUitgaven" class="stylePrijsInput" type="number" name="overigeHuishoudelijkeUitgaven" value="" min="1">
+
+            <button>Terug</button>
+            <button>Submit</button>
+        </fieldset>
     </form>
+    
     
 </body>
 </html>
