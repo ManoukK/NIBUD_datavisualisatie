@@ -17,35 +17,35 @@
     <form class="form-box">
             <img src="/images/placeholder.png"> 
 
-        <fieldset id="formSituatie">
-                 <label for="huishouden">Huishouden</label>
-                <select id="huishouden">
-                    <option value="" selected disabled hidden>Kies een optie</option>
-                    <option value="alleenstaand">Alleenstaand</option>
-                    <option value="eenouder">Eenouder</option>
-                    <option value="paar">Paar</option>
-                    <option value="ouderpaar">Ouder paar</option>
-                </select>
+        <fieldset id="formSituatie" class="stap1 ">
+            <label for="huishouden">Huishouden</label>
+            <select id="huishouden">
+                <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="alleenstaand">Alleenstaand</option>
+                <option value="eenouder">Eenouder</option>
+                <option value="paar">Paar</option>
+                <option value="ouder paar">Ouder paar</option>
+            </select>
 
-            <div>
+            <div id="aantalKinderen">
                 <label>Aantal kinderen</label>
                 <span>
-                    <input type="radio" id="kind0" name="aantalkinderen" value="kind0" class="kindInput">
+                    <input type="radio" id="kind0" name="aantalkind0" value="0" class="kindInput">
                     <label for="kind0" class="kindLabel">0</label>
                 </span>
 
                 <span>
-                    <input type="radio" id="kind1" name="aantalkinderen" value="kind1" class="kindInput">
+                    <input type="radio" id="kind1" name="aantalkind1" value="1" class="kindInput">
                     <label for="kind1" class="kindLabel">1</label>
                 </span>
 
                 <span>
-                    <input type="radio" id="kind2" name="aantalkinderen" value="kind2" class="kindInput">
+                    <input type="radio" id="kind2" name="aantalkind2" value="2" class="kindInput">
                     <label for="kind2" class="kindLabel">2</label>
                 </span>
 
                 <span>
-                    <input type="radio" id="kind3" name="aantalkinderen" value="kind3" class="kindInput">
+                    <input type="radio" id="kind3" name="aantalkind3" value="3" class="kindInput">
                     <label for="kind3" class="kindLabel">3</label>
                 </span>
             </div>
@@ -53,20 +53,20 @@
             <label for="wonen">Woonsituatie</label>
             <select id="wonen">
                 <option value="" selected disabled hidden>Kies een optie</option>
-                <option value="gemiddeldeHuur">Gemiddelde huur</option>
-                <option value="anderhalfGemiddeldeHuur">1.5 keer gemiddelde huur</option>
-                <option value="gemiddeldeHypotheek">Gemiddelde hypotheek</option>
-                <option value="anderhalfGemiddeldeHypotheek">1.5 keer gemiddelde hypotheek</option>
+                <option value="gemiddelde huur">Gemiddelde huur</option>
+                <option value="1,5 gemiddelde huur">1.5 keer gemiddelde huur</option>
+                <option value="gemiddelde hypotheek">Gemiddelde hypotheek</option>
+                <option value="1,5 Gemiddelde hypotheek">1.5 keer gemiddelde hypotheek</option>
             </select>
 
             <label for="inkomen">Inkomen per maand</label>
             <input id="inkomen" class="stylePrijsInput" type="number" name="inkomen" value="" min="1">
 
             <a>Terug</a>
-            <button>Verder</button>
+            <a class="verderNaarStap2">Verder</a>
         </fieldset> 
 
-        <fieldset id="formVasteLasten">
+        <fieldset id="formVasteLasten" class="stap2 hide">
             <label for="gas">Gas</label>
             <input id="gas" class="stylePrijsInput" type="number" name="gas" value="" min="1">
 
@@ -82,8 +82,8 @@
             <label for="telefoonTvInternet">Telefoon, TV en internet</label>
             <input id="telefoonTvInternet" class="stylePrijsInput" type="number" name="telefoonTvInternet" value="" min="1">
 
-            <label for="verzekeringen"> Verzekeringen</label>
-            <input id="verzekeringen" class="stylePrijsInput" type="number" name="" value="verzekeringen" min="1">
+            <label for="verzekeringen">Verzekeringen</label>
+            <input id="verzekeringen" class="stylePrijsInput" type="number" name="verzekeringen" value="" min="1">
 
             <label for="onderwijs">Onderwijs</label>
             <input id="onderwijs" class="stylePrijsInput" type="number" name="onderwijs" value="" min="1">
@@ -97,11 +97,11 @@
             <label for="vervoer">Vervoer</label>
             <input id="vervoer" class="stylePrijsInput" type="number" name="vervoer" value="" min="1">
 
-            <button>Terug</button>
-            <button>Verder</button>
+            <a class="terugStap1">Terug</a>
+            <a class="verderNaarStap3">Verder</a>
         </fieldset>
 
-        <fieldset id="formOverig">
+        <fieldset id="formOverig" class="stap3 hide">
             <label for="kledingSchoenen">Kleding en schoenen</label>
             <input id="kledingSchoenen" class="stylePrijsInput" type="number" name="kledingSchoenen" value="" min="1">
 
@@ -118,16 +118,18 @@
             <input id="vrijetijdsuitgaven" class="stylePrijsInput" type="number" name="vrijetijdsuitgaven" value="" min="1">
 
             <label for="voeding">Voeding</label>
-            <input id="voeding" class="stylePrijsInput" type="number" name="voeding" value="" min="1">
+            <input id="voeding" class="stylePrijsInput" type="text" name="voeding" min="1">
 
             <label for="overigeHuishoudelijkeUitgaven">Overige huishoudelijke uitgaven</label>
             <input id="overigeHuishoudelijkeUitgaven" class="stylePrijsInput" type="number" name="overigeHuishoudelijkeUitgaven" value="" min="1">
 
-            <button>Terug</button>
-            <button>Submit</button>
+            <a class="terugStap2">Terug</a>
+            <a id="formOpslaan" onclick="store()" href="datavisPage.html" >submit!</a>
         </fieldset>
     </form>
     
-    
 </body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/formToggle.js"></script>
+    <script src="js/localStorage.js"></script>
 </html>

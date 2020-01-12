@@ -24,7 +24,7 @@ img {
 
 form {
     width: 25em;
-    height: 45em;
+    height: 80em;
     margin-bottom: 10em;
 }
 
@@ -86,9 +86,9 @@ div {
     box-shadow: 0px 3px 0px var(--schaduw);
 }
 
-#formOverig, #formVasteLasten {
+/* #formOverig, #formVasteLasten {
     visibility: hidden;
-}
+} */
 
 
 
