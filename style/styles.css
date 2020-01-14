@@ -30,7 +30,7 @@ nav {
     margin-right: 4em;
 }
 
-svg {
+nav svg {
     background-color: var(--donkerBlauw);
     margin-top: -1.5em;
 }
