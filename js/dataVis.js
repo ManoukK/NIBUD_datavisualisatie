@@ -272,8 +272,7 @@ const inventarisData = JSON.parse(localStorage.getItem("inventaris"));
 const onderhoudHuisTuinData = JSON.parse(localStorage.getItem("onderhoud huis tuin"));
 const nietVergoedeZiektekostenData = JSON.parse(localStorage.getItem("niet vergoede ziektekosten"));
 const vrijetijdsuitgavenData = JSON.parse(localStorage.getItem("vrijetijdsuitgaven"));
-console.log(localStorage.getItem("voeding"));
-const voedingData = localStorage.getItem("voeding");
+const voedingData = JSON.parse(localStorage.getItem("voeding"));
 const overigeHuishoudelijkeUitgavenData = JSON.parse(localStorage.getItem("overige huishoudelijke uitgaven"));
 
 // //object met alle data van de local storage 
@@ -314,8 +313,6 @@ const render = results => {
   //const yValue = results.bedrag;
   //const xValue = results.post;
 
-  const lijstje = Object.entries(results);
-  console.log(lijstje);
 
   //https://stackoverflow.com/questions/4437916/how-to-convert-all-elements-in-an-array-to-integer-in-javascript
   // Object.values of keys https://javascript.info/keys-values-entries
@@ -324,6 +321,10 @@ const render = results => {
   // const yValue = bedragen.map(Number);
   const yValue = bedragen;
   const xValue = posten;
+
+  console.log("resultaten", results);
+  console.log("bedragen", bedragen);
+  console.log("posten", posten);
 
   const margin = {top: 50, right: 100, bottom: 50, left: 100};
   const innerWidth = width - margin.left - margin.right;
@@ -369,8 +370,9 @@ const render = results => {
       .data(posten)
     .enter().append('rect')
         .attr('class', 'bar')
-        .attr('x', function(d, i){ return xScale(d)})
+        .attr('x', function(d){ return xScale(d)})
         .attr('width', xScale.bandwidth())
+        //zonder d hier word alles op zn kop gezet
         .attr('y', function(d, i) {return yScale(bedragen[i])})
         .attr('height', function(d, i){ console.log(); return innerHeight - yScale(bedragen[i])});
 
