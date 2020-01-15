@@ -30,7 +30,7 @@ nav {
     margin-right: 4em;
 }
 
-svg {
+nav svg {
     background-color: var(--donkerBlauw);
     margin-top: -1.5em;
 }
@@ -140,7 +140,7 @@ select {
     box-shadow: 0px 3px 0px var(--schaduw);
 }
 
-.form-box {
+form {
     border-radius: 0.1875em; /* 3/16 */
     margin: 6.9em auto;
     width: 28em;
@@ -156,7 +156,7 @@ select {
 
 @media only screen and (max-width: 30em) {
   
-    .form-box {
+    form {
       max-width: 90vw;
   
     }
@@ -164,7 +164,11 @@ select {
   
   @media only screen and (min-width: 30em) and (max-width: 60em) {
   
-    .form-box {
+    form {
       max-width: 80vw;
     }
   }
+
+  .hide {
+    display: none;
+}
