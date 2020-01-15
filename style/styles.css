@@ -173,19 +173,3 @@ form {
 body {
     background-color: var(--PaarsBlauw  )
 }
-
-@media screen and (max-width: 40em) {
-    .center {
-        max-width: 85vw;
-    }
-    body {
-        background-color: yellow;
-    }
-}
-
-/* PHONE On screens that are 600px or less */
-@media screen and (min-width: 992px) {
-    body {
-        background-color: purple;
-    }
-}
