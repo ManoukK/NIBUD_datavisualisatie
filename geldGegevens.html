@@ -13,6 +13,15 @@
             <img src="/images/placeholder.png"> 
 
         <fieldset id="formSituatie" class="stap1 ">
+            <!-- <label for="huishouden">Huishouden</label>
+            <select id="huishouden">
+                <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="alleenstaand">Alleenstaand</option>
+                <option value="eenouder">Eenouder</option>
+                <option value="paar">Paar</option>
+                <option value="ouder paar">Ouder paar</option>
+            </select> -->
+
             <label for="huishouden">Huishouden</label>
             <select id="huishouden">
                 <option value="" selected disabled hidden>Kies een optie</option>
@@ -20,27 +29,27 @@
                 <option value="eenouder">Eenouder</option>
                 <option value="paar">Paar</option>
                 <option value="ouder paar">Ouder paar</option>
-            </select>
+
 
             <div id="aantalKinderen">
                 <label>Aantal kinderen</label>
                 <span>
-                    <input type="radio" id="kind0" name="aantalkind0" value="0" class="kindInput">
+                    <input type="radio" id="kind0" name="aantalkind" value="0" class="kindInput">
                     <label for="kind0" class="kindLabel">0</label>
                 </span>
 
                 <span>
-                    <input type="radio" id="kind1" name="aantalkind1" value="1" class="kindInput">
+                    <input type="radio" id="kind1" name="aantalkind" value="1" class="kindInput">
                     <label for="kind1" class="kindLabel">1</label>
                 </span>
 
                 <span>
-                    <input type="radio" id="kind2" name="aantalkind2" value="2" class="kindInput">
+                    <input type="radio" id="kind2" name="aantalkind" value="2" class="kindInput">
                     <label for="kind2" class="kindLabel">2</label>
                 </span>
 
                 <span>
-                    <input type="radio" id="kind3" name="aantalkind3" value="3" class="kindInput">
+                    <input type="radio" id="kind3" name="aantalkind" value="3" class="kindInput">
                     <label for="kind3" class="kindLabel">3</label>
                 </span>
             </div>
@@ -55,7 +64,7 @@
             </select>
 
             <label for="inkomen">Inkomen per maand</label>
-            <input id="inkomen" class="stylePrijsInput" type="number" name="inkomen" value="" min="1">
+            <input id="inkomen" class="stylePrijsInput" type="number" name="inkomen" placeholder="Bijv. '3000'"value="" min="1">
 
             <a>Terug</a>
             <a class="verderNaarStap2">Verder</a>

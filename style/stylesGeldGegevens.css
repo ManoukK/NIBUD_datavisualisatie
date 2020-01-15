@@ -1,19 +1,22 @@
 :root {
     /* kleuren */
+    --lichtPaarsBlauw: #566FB3;
+    --PaarsBlauw: #2F4EA4;
+    --Oranje: #EEBC32;
     --donkerBlauw: #2699FB;
     --middelBlauw: #BCE0FD;
     --lichtBlauw: #F1F9FF;
     --wit: #ffffff;
     --zwart: #000000;
-    --donkerGrijs: #7F7F7F;
-    --grijs: #707070;
-    --schaduw: #C4C4C4;
+    --donkerGrijs: #707070; /* placeholders in inputs */
+    --lichtGrijs: #C4C4C4; /* shadow for inputs */
+    --Snow: #F1F1F1; /* borders van inputs, net niet volledig wit*/
     --borderGrijs: #F1F1F1;
 
     /* afstanden */
-    --hoofdTitel: 2em;
-    --subTitel: 1.5em;
-    --leesTekst: 1em;
+    --hoofdTitel: 2rem;
+    --subTitel: 1.5rem;
+    --leesTekst: 1rem;
 }
 
 img {
@@ -56,6 +59,7 @@ div {
     box-shadow: 0px 3px 0px #C4C4C4;
     border: 1px solid #F1F1F1;
     margin-top: -1em;
+    background-color: var(--wit);
 }
 
 .kindLabel[for="kind1"], .kindLabel[for="kind2"], .kindLabel[for="kind3"] {
@@ -71,20 +75,44 @@ div {
 }
 
 .kindInput:checked ~ label {
-    background-color: yellowgreen;
+    background-color: var(--donkerBlauw);
+    box-shadow: 0px 3px 0px #2699FB;
+    border: none;
+    color: var(--Snow);
 }
 
+.kindLabel:hover {
+    opacity: .9;
+}
+.kindLabel[for="kind0"]{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.kindLabel[for="kind3"]{
+    border-radius: 0px 5px 5px 0px;
+}
 .stylePrijsInput {
     height: 3em;
     width: 95%;
     background-color: var(--wit);
     border: 2px solid var(--borderGrijs);
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 1em;
     font-size: var(--leesTekst);
     color: var(--grijs);
-    box-shadow: 0px 3px 0px var(--schaduw);
+    box-shadow: 0px 3px 0px var(--lichtGrijs);
 }
+
+.stylePrijsInput:active, .stylePrijsInput:focus {
+    box-shadow: 0px 5px 0px var(--donkerBlauw);
+    opacity: 1;
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
+    color: var(--donkerBlauw);
+}
+
+
 
 /* #formOverig, #formVasteLasten {
     visibility: hidden;
@@ -99,15 +127,11 @@ fieldset {
 }
 
 .form-box {
-    border-radius: 0.1875em; /* 3/16 */
     margin: 6.9em auto;
     width: 28em;
     padding: 1.5em;
     position: relative;
-    background: white;
+    background: none;
     overflow: hidden;
-    -webkit-box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
-    -moz-box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
-    box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
     transition: ease margin .5s, ease opacity .5s;
 }

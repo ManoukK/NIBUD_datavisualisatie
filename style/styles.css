@@ -139,7 +139,7 @@ select {
     width: 101%;
     background-color: var(--wit);
     border: 2px solid var(--borderGrijs);
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 1em;
     font-size: var(--leesTekst);
     color: var(--grijs);
@@ -147,29 +147,21 @@ select {
 }
 
 form {
-    border-radius: 0.1875em; /* 3/16 */
     margin: 6.9em auto;
     width: 28em;
     padding: 1.5em;
     position: relative;
-    background: white;
     overflow: hidden;
-    -webkit-box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
-    -moz-box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
-    box-shadow: 0em 0.3125em 0.5em -0.125em rgba(0,0,0,0.25); /* 0/16 */ /* 5/16 */ /* 8/16 */ /* 2/16 */
     transition: ease margin .5s, ease opacity .5s;
 }
 
 .center {
     margin-right: auto;
     margin-left: auto;
-    max-width: 100vw;
+    width: 40%;
   }
 
 .hide {
     display: none;
 }
 
-body {
-    background-color: var(--PaarsBlauw  )
-}
