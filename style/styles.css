@@ -63,7 +63,7 @@ fieldset {
 legend {
     position: relative;
     font-size: 2em;
-    color: var(--donkerGrijs);
+    color: var(--wit);
     padding-top: 1em;
 }
 
