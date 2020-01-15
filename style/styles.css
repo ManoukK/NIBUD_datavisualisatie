@@ -80,14 +80,24 @@ label {
 }
 
 input {
+    display: inline;
+    padding: 0.5em 2em;
     height: 3em;
     width: 95%;
-    background-color: var(--lichtBlauw);
-    border: 2px solid #BCE0FD;
-    border-radius: 10px;
-    padding-left: 1em;
+    background-color: var(--wit);
+    box-shadow: 0px 3px 0px #C4C4C4;
+    border: 1px solid #F1F1F1;
+    border-radius: 5px;
     font-size: var(--leesTekst);
+    color: var(--grijs);
+}
+
+input:active, input:focus {
+    box-shadow: 0px 4px 0px var(--donkerBlauw);
     color: var(--donkerBlauw);
+    outline: 0;
+    outline-color: transparent;
+    outline-style: none;
 }
 
 
@@ -163,4 +173,3 @@ form {
 .hide {
     display: none;
 }
-

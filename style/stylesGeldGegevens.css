@@ -27,7 +27,7 @@ img {
 
 form {
     width: 25em;
-    height: 80em;
+    height: 100em;
     margin-bottom: 10em;
 }
 
@@ -91,27 +91,6 @@ div {
 .kindLabel[for="kind3"]{
     border-radius: 0px 5px 5px 0px;
 }
-.stylePrijsInput {
-    height: 3em;
-    width: 95%;
-    background-color: var(--wit);
-    border: 2px solid var(--borderGrijs);
-    border-radius: 5px;
-    padding-left: 1em;
-    font-size: var(--leesTekst);
-    color: var(--grijs);
-    box-shadow: 0px 3px 0px var(--lichtGrijs);
-}
-
-.stylePrijsInput:active, .stylePrijsInput:focus {
-    box-shadow: 0px 5px 0px var(--donkerBlauw);
-    opacity: 1;
-    outline: 0;
-    outline-color: transparent;
-    outline-style: none;
-    color: var(--donkerBlauw);
-}
-
 
 
 /* #formOverig, #formVasteLasten {
