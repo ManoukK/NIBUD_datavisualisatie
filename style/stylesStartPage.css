@@ -1,53 +1,32 @@
 :root {
+    --lichtPaarsBlauw: #566FB3;
+    --PaarsBlauw: #2F4EA4;
+    --Oranje: #EEBC32;
     --donkerBlauw: #2699FB;
     --middelBlauw: #BCE0FD;
     --lichtBlauw: #F1F9FF;
     --wit: #ffffff;
     --zwart: #000000;
-    --grijs: #707070;
-    --hoofdTitel: 2em;
-    --subTitel: 1.5em;
-    --leesTekst: 1em;
-}
-
-body {
-    background-color: var(--wit);
+    --donkerGrijs: #707070; /* placeholders in inputs */
+    --lichtGrijs: #C4C4C4; /* shadow for inputs */
+    --Snow: #F1F1F1; /* borders van inputs, net niet volledig wit*/
+    --hoofdTitel: 2rem;
+    --subTitel: 1.5rem;
+    --leesTekst: 1rem;
 }
 
 img {
-    position: absolute;
-    width: 35%;
-    margin-left: 8em;
-    margin-top: 7em;
+    max-width: 100%;
     display: inline-block;
 }
 
 h1 {
-    position: absolute;
-    margin-top: 5em;
-    margin-left: 52%;
-    margin-right: 10em;
-    color: var(--donkerBlauw);
+    color: var(--Snow);
     font-size: var(--hoofdTitel);
 }
 
 p {
-    position: absolute;
-    display: inline-block;
-    margin-left: 52%;
-    margin-right: 15em;
-    margin-top: 14em;
-    color: var(--grijs);
+    color: var(--Snow);
     font-size: var(--leesTekst);
-}
-
-div {
-    position: absolute;
-    margin-left: 52%;   
-    margin-top: 22em;
-}
-
-#subKnop {
-    margin-left: 2em;
 }
 
