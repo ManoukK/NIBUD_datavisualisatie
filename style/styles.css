@@ -76,7 +76,7 @@ label {
     margin-top: 2em;
     margin-bottom: 0.5em;
     font-size: var(--leesTekst);
-    color: var(--donkerBlauw);
+    color: #FAFAFA;
 }
 
 input {
@@ -156,8 +156,7 @@ form {
 }
 
 .center {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 6.9em auto;
     width: 40%;
   }
 
