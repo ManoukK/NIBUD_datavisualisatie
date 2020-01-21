@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 :root {
     --mainOrange: #EEBC32;
     --mainBlauw: #2F4EA4;
@@ -14,8 +17,6 @@
     --subTitel: 1.5em;
     --leesTekst: 1em;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -80,7 +81,6 @@ input {
     display: inline;
     padding: 0.5em 2em;
     height: 3em;
-    width: 95%;
     background-color: var(--wit);
     box-shadow: 0px 3px 0px #C4C4C4;
     border: 1px solid #F1F1F1;
@@ -153,15 +153,6 @@ select {
     box-shadow: 0px 3px 0px var(--schaduw);
 }
 
-form {
-    margin: 6.9em auto;
-    width: 28em;
-    padding: 1.5em;
-    position: relative;
-    overflow: hidden;
-    transition: ease margin .5s, ease opacity .5s;
-}
-
 .center {
     margin: 6.9em auto;
     width: 40%;
@@ -218,4 +209,5 @@ form {
   .btn-previous:hover {
       color: var(--mainOrange);
   }
+  
   
