@@ -18,15 +18,21 @@
 img {
     max-width: 100%;
     display: inline-block;
+    margin-bottom: 2em;
 }
 
-h1 {
-    color: var(--Snow);
-    font-size: var(--hoofdTitel);
-}
 
 p {
     color: var(--Snow);
     font-size: var(--leesTekst);
 }
 
+.center {
+    margin: 6.9em auto;
+    width: 19.5em;
+    padding: 1.5em;
+    position: relative;
+    background: none;
+    overflow: hidden;
+    transition: ease margin .5s, ease opacity .5s;
+}
