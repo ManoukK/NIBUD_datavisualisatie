@@ -1,21 +1,18 @@
 :root {
-    /* kleuren */
-    --lichtPaarsBlauw: #566FB3;
-    --PaarsBlauw: #2F4EA4;
-    --Oranje: #EEBC32;
-    --donkerBlauw: #2699FB;
-    --middelBlauw: #BCE0FD;
-    --lichtBlauw: #F1F9FF;
-    --wit: #ffffff;
-    --zwart: #000000;
-    --donkerGrijs: #707070; /* placeholders in inputs */
-    --lichtGrijs: #C4C4C4; /* shadow for inputs */
-    --Snow: #F1F1F1; /* borders van inputs, net niet volledig wit*/
-
-    /* afstanden */
-    --hoofdTitel: 2rem;
-    --subTitel: 1.5rem;
-    --leesTekst: 1rem;
+    --mainOrange: #EEBC32;
+    --mainBlauw: #2F4EA4;
+    --lightBlauw: #566FB3;
+    --ctaBlauw: #2699FB;
+    --lightGrey: #F1F1F1;
+    --darkGrey: #707070;
+    --shadowGrey: #C4C4C4;
+    --snowWhite: #FAFAFA;
+    --errorRood: #FB2626;
+    --shadowBlauw: #007FEB;
+  
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
@@ -173,3 +170,52 @@ form {
 .hide {
     display: none;
 }
+
+.navigation {
+    display: inline-block;
+    margin-top: 4em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 2em;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      align-content: stretch;
+  }
+
+.btn-next {
+    display: inline-block;
+    background: var(--ctaBlauw) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 0px var(--shadowBlauw);
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+    box-sizing: border-box;
+    color: var(--snowWhite);
+    padding: 1em 2em;
+  }
+  
+  .btn-previous {
+    color: var(--snowWhite);
+    padding: 1em 0em;
+  }
+  
+  .btn-previous:focus, .btn-next:focus {
+    box-shadow: 0px 3px 0px var(--snowWhite);
+  }
+  
+  .btn-previous:hover, .btn-next:hover {
+    cursor: pointer;
+  }
+  
+  .btn-next:hover {
+    box-shadow: 0px 3px 0px var(--ctaBlauw);
+    background: var(--shadowBlauw) 0% 0% no-repeat padding-box;background: 
+  }
+  
+  .btn-previous:hover {
+      color: var(--mainOrange);
+  }
+  
