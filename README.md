@@ -28,7 +28,7 @@ Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen g
 ## De dataset 
 
 ## Features
-[] test
+- [ ] test
 
 ## Documentatie in de wiki
 
