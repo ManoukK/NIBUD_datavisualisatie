@@ -47,7 +47,8 @@ Voor dit project hebben wij ook gebruik gemaakt van jquery. Dit gebruikte wij me
 ```html
 <script src="js/jquery-3.4.1.min.js"></script>
 ```
-
+### Let op!
+Als je met de echte dataset te werk gaat van het Nibud. Lees dan ook de tekst onder het kopje: De dataset. 
 
 ## De dataset 
 
