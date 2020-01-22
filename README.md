@@ -1,4 +1,4 @@
-# Een tool voor het Nibud 
+# Budget Boksen. Een tool voor het Nibud 
 ### verder bijvullen!!!!! 
 
 ## De opdracht 
@@ -10,6 +10,13 @@ Zij wilde graag een online tool om mensen te helpen. Met de dataset die wij kreg
 Het liefst wilde zij een datavisualisatie hebben die gemaakt was in Tableau. Het was geen must have voor hun dus hebben we ervoor gekozen om een data visualisatie te maken in D3.js. Dit bied meer mogelijkheden. Niet alleen voor de technische kant maar ook voor de visuele kant. 
 
 ## Het concept 
+Ons concept heet Budget Boksen.
+
+Onze doelgroep voor dit concept is iemand die in de schulden dreigt te raken maar er nog niet diep in zit. Diegene heeft dan ook zelf een budget coach ingeschakeld en is bereid/gemotiveerd om zijn geld zaken weer op orde te hebben. 
+
+Het doel met onze tool is om het gesprek te starten tussen de doelgroep en de budget coach. Het is de bedoeling dat diegene inzicht krijgt in zijn huidige uitgaven en waar er mogelijkheden liggen om zijn uitgaven te verminderen/verbeteren. 
+
+Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen gaan zij naar onze website zij vullen het formulier in met de juiste bedragen/gegevens en vervolgens krijgen zij een grafiek te zien. In het grafiek zie je hoeveel porcent je boven of onder zit ten opzichte van het advies van Nibud. Zo kan je zien of je relatief meer of minder uitgeeft dan wat er geadviseerd word. Onder het grafiek worden er tips getoont en kan de doelgroep samen met de budget coach bepalen wat hij die maand wilt bereiken en waar hij op moet letten. 
 
 ## installatie 
 - via github 
