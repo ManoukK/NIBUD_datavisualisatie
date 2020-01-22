@@ -4,7 +4,7 @@
 > Let op! Voor de online versie word er een alternatieve dataset gebruikt. Het Nibud wilde niet dat de echte dataset waarmee wij werkte online kwam te staan dus hebben wij voor de online versie er zelf een gemaakt.  
 
 ## De opdracht 
-Voor deze opdracht hebben wij in een team gewerkt met drie mensen. Raven Lakerveld, Jasper Koenen en ik (Manouk Kappé). Jasper en Raven deden voornamelijk het visuele aspect van het concept en ik deed de technische kant. Later in het proces hebben zij mij ook geholpen met de website met html en css. 
+Voor deze opdracht hebben wij in een team gewerkt met drie mensen: Raven Lakerveld, Jasper Koenen en ik (Manouk Kappé). Jasper en Raven deden voornamelijk het visuele aspect van het concept en ik deed de technische kant. Later in het proces hebben zij mij ook geholpen met de website met html en css. 
 
 Wij hadden als opdrachtgever het Nibud. Zij helpen mensen die dreigen in de schulden te raken en mensen die al schulden hebben. 
 Zij wilde graag een online tool om mensen te helpen. Met de dataset die wij kregen kon je veel kanten op en wij besloten om een online tool te maken waarbij je een begroting kan maken van je uitgaven. Hier onder verder over het concept. 
