@@ -113,6 +113,8 @@ function opschonenInkomen(woonsituatieFilter){
 };
 ```
 
+## Procentuele berekening
+
 ## Features
 - [ ] Gepersonaliseerde tips 
 - [ ] Webpage met alle tips 
@@ -124,13 +126,22 @@ function opschonenInkomen(woonsituatieFilter){
 - Hoe werkt de bar chart: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Hoe-werkt-de-bar-chart
 
 ## Bronnenlijst
-Hier onder zie je een bronnenlijst met de belangrijkste of grootste elementen uit dit concept. Uiteraard heb ik ook veel kleine dingentjes op gezocht. Deze staan in de comments in de code vermeld. 
-
+#### Belangrijkste bronnen
 - Het grafiek met negatieve en positieve waardes: https://bl.ocks.org/mbostock/2368837
 - Een basis grafiek van Curran: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7
 - Local storage: https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
 - De dataset opschonen: Roy Csuka, https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
 - Animaties komen van Animista: https://animista.net/
+
+#### overige bronnen
+- Local storage begrijpen: https://www.youtube.com/watch?v=k8yJCeuP6I8 en https://www.youtube.com/watch?v=NxVCq4p0Kb0
+- Values opslaan in local storage:  https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
+- Local storage waardes ophalen: https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm
+- Local strorage parsen: https://stackoverflow.com/questions/51173341/crossfilter-loading-a-json-file-from-localstorage
+- Filteren binnen de dataset: https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
+- Items verwijderen uit een array: https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice
+- If else statement voor tegen errors: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+- bar chart maken op basis van local storage: https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work
 
 ## credits voor: 
 - Jasper Koenen, die veel html en css heeft geschreven voor dit project 
