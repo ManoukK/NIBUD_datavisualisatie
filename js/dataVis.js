@@ -1,6 +1,8 @@
+//hoi test
+
 //values uit de local storage ophalen om het vervolgens in een object te stoppen
 //https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm
-// het parsen van de local storage https://theshravan.net/blog/storing-json-objects-in-html5-local-storage/
+// het parsen van de local storage 
 //https://stackoverflow.com/questions/51173341/crossfilter-loading-a-json-file-from-localstorage
 // stap 1 van het formulier
 // geen parse gebruikt omdat het anders word gezien als nummers
