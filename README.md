@@ -51,6 +51,15 @@ Voor dit project hebben wij ook gebruik gemaakt van jquery. Dit gebruikte wij me
 Als je met de echte dataset te werk gaat van het Nibud. Lees dan ook de tekst onder het kopje: De dataset. 
 
 ## De dataset 
+Het Nibud wilt liever niet dat we hun dataset die wij gebruiken online komt te staan. Om toch een indruk te krijgen van het concept hebben wij een alternatieve dataset gemaakt die lijkt op wat het Nibud heeft. 
+
+#### De dataset van het Nibud, hoe ziet dat er uit?
+Ik wil/kan niet helemaal vrij geven hoe de dataset eruit ziet maar ik laat de alternatieve dataset zien. 
+
+
+uitleggen
+- hoe de code werkt met en zonder echte data
+- hoe de dataset werkt (wat er in zit) 
 
 ## Features
 - [ ] Gepersonaliseerde tips 
