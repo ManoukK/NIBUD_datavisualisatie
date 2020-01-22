@@ -125,11 +125,31 @@ const eigen = resultsPersoonlijkSchoon
 const nibud = schoneData
 ```
 
-Vervolgens maak ik een nieuwe variable die de uitslag van de berekening terug geeft. De berekening werkt eigenlijk als volgd:
-1. bdje
+Vervolgens maak ik een nieuwe variable die de uitslag van de berekening terug geeft. Dit stukje: eigen[0], betekend dat het de eerste item uit de array is. Wat bij beide arrays gas is. De berekening werkt eigenlijk als volgd:
+1. eigen uitgaven : Nibud advies = A
+2. A - 1 = B
+3. B x 100 = De uitkomst
+
 ```js 
 const gasBerekening = Math.round(((eigen[0] / nibud[0]) - 1) * 100);
 ```
+Toen ik deze code schreef liep ik tegen het porbleem aan dat sommige uitkomsten boven de 1000 komen. Dit is niet de bedoeling en klopt ook niet helemaal. Dit heb ik opgelost door bij elke berekening een stukje code te schrijven die deze errors oplost. Als de uitkomst groter is dan 1000 moet de uitkomst gedeelt worden door 10. Als het niet groter is dan 1000 dan kan het door met de variable gas. 
+
+```js
+if (gasBerekening >= 1000){gas = gasBerekening / 10;} 
+  else {gas = gasBerekening};
+```
+
+Op het laatst stop ik de uitkomst in een nieuwe array die samen hangt met een post titel. 
+```js
+const procentenArray = [
+    {
+      post: "gas",
+      bedrag: gas
+    },
+```
+
+Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aan moest pakken dus heb ik het op deze manier geschreven. Het was voor mij allemaal erg nieuw en om het op deze manier te schrijven heb ik wel veel geleerd hoe het werkt. Als iemand een betere manier heeft om dit te schrijven hoor ik het graag!
 
 ## Features
 - [ ] Gepersonaliseerde tips 
