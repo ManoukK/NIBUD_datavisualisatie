@@ -1,42 +1,58 @@
 :root {
-    /* kleuren */
-    --donkerBlauw: #2699FB;
-    --middelDonkerBlauw: #7FC4FD;
-    --middelBlauw: #BCE0FD;
-    --lichtBlauw: #F1F9FF;
-    --wit: #ffffff;
-    --zwart: #000000;
-    --donkerGrijs: #7F7F7F;
-    --grijs: #707070;
-
-    /* afstanden */
+    --mainOrange: #EEBC32;
+    --mainBlauw: #2F4EA4;
+    --lightBlauw: #566FB3;
+    --ctaBlauw: #2699FB;
+    --lightGrey: #F1F1F1;
+    --darkGrey: #707070;
+    --shadowGrey: #C4C4C4;
+    --snowWhite: #FAFAFA;
+    --errorRood: #FB2626;
+    --shadowBlauw: #007FEB;
+  
     --hoofdTitel: 2em;
     --subTitel: 1.5em;
     --leesTekst: 1em;
 }
 
-/* form {
-    width: 25em;
-    height: auto;
-} */
 
-#wachtwoordVergeten {
-    position: absolute;
-    color: var(--middelDonkerBlauw);
-    text-decoration: none;
-    margin-left: 10.5em;
-    margin-top: 0.5em;
+body {
+    background-color: var(--mainBlauw);
 }
+
 
 .hide {
     display: none;
 }
 
 .vergeten {
-    float: right;
+    margin-top: 1em;
+    margin-right: 0em;
+    margin-left: 0em;
+    margin-bottom: 1em;
+    right: -35px;
     display: block;
+    position: absolute;
+    color: var(--snowWhite);
 }
 
-form {
-    padding-bottom: 5rem;
+
+input {
+    background-color: var(--snowWhite);
+}
+
+.form-box {
+    margin: 6.9em auto;
+    width: 19.5em;
+    padding: 1.5em;
+    position: relative;
+    background: none;
+    overflow: hidden;
+    transition: ease margin .5s, ease opacity .5s;
+}
+
+legend {
+    font-size: var(--subTitel);
+    font-weight: 600;
+    color: white;
 }
