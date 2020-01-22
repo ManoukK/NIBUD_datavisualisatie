@@ -34,7 +34,7 @@ Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen g
 ## Features
 - [ ] Gepersonaliseerde tips 
 - [ ] Webpage met alle tips 
-- [ ] Beter stap 1 formulier (bijvoorbeeld aantal kinderen en huishouden opgesplists)
+- [ ] Beter stap 1 formulier (bijvoorbeeld aantal kinderen en huishouden gescheiden)
 - [ ] Animaties  
 
 ## Documentatie in de wiki
