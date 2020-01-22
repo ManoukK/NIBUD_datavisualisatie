@@ -91,7 +91,27 @@ Voor de alternatieve dataset kan je de filterstappen overslaan. Om het over te s
 
 Als je met de echte dataset werkt moet je het tweede stukje code gebruiken. In de function opschonenHuishouden(dataNibud) word alles gefilterd tot een kleine gepersonaliseerde array.
 
+Vervolgens moet je alleen nog deze code weer aan zetten en werkt alles op basis van de echte dataset van het Nibud. 
+```js
+function opschonenHuishouden(dataNibud ){
+  const huishoudenFilter = dataNibud.filter(dataNibud  => dataNibud.huishouden == huishoudenData);
+  console.log("filter huishouden", huishoudenFilter);
+  opschonenWonen(huishoudenFilter);
+};
 
+function opschonenWonen(huishoudenFilter){
+  const woonsituatieFilter = huishoudenFilter.filter(huishoudenFilter => huishoudenFilter.woonsituatie == wonenData);
+  console.log("filter woon situatie", woonsituatieFilter);
+  opschonenInkomen(woonsituatieFilter);
+};
+
+function opschonenInkomen(woonsituatieFilter){
+  const inkomenFilter = woonsituatieFilter.filter(woonsituatieFilter => woonsituatieFilter.inkomen == inkomenData);
+  //note: hier zijn al de array items eruit gefilterd die ik in de volgende function pas doe.
+  console.log("filter inkomen", inkomenFilter);
+  itemsVerwijderen(inkomenFilter);
+};
+```
 
 ## Features
 - [ ] Gepersonaliseerde tips 
