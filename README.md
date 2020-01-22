@@ -61,7 +61,7 @@ In het excel bestand ziet de dataset er zo uit:
 
 De categorieën waar ik mee heb gewerkt in de data visualisatie waren eigenlijk alleen maar post en bedrag. Om persoonlijk advies te krijgen heb ik filters gemaakt die kijkt naar wat je inkomen is, je woonsituatie en je huishouden. Op basis van die gegevens word de rest die niet overeenkomt met deze gegevens weggefilterd. Zo hou je uiteindelijk een kleine array over met bedragen die het nibud adviseerd per post. 
 
-### Code voor de twee datasets in javascript
+### Code aanpassen als je met de echte dataset te werk gaat
 Omdat we nu werken met een alternatieve dataset heb ik wat code moeten toevoegen en wat code moeten uit zetten. Hier ga ik uitleggen wat je aan en uit moet zetten als je met de echte dataset te werk gaat. Dit heb ik in het javascript bestand ook met commends aangegeven maar het is ook fijn en makkelijk als ik het hier duidelijk even neer zet. 
 
 Deze codes staan allemaal in het dataVis.js bestand. 
