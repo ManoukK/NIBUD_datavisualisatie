@@ -114,6 +114,22 @@ function opschonenInkomen(woonsituatieFilter){
 ```
 
 ## Procentuele berekening
+Voor de data visualisatie maken wij gebruik van een procenuele berekening tussen het advies van het Nibud en wat diegene zelf in het formulier heeft ingevuld. Hieronder leg ik de berekening uit zodat je een idee krijgt hoe wij aan deze data komen. 
+
+#### Let op!
+Ik laat alleen zien hoe het werkt met de post: gas. Dit doe ik omdat het voor elke post hetzelfde is en zodat deze uitleg niet al te lange code bevat. 
+
+Allereerst werken wij met twee verschillende array's Die worden boven in de function al benoemt. 
+```js
+const eigen = resultsPersoonlijkSchoon
+const nibud = schoneData
+```
+
+Vervolgens maak ik een nieuwe variable die de uitslag van de berekening terug geeft. De berekening werkt eigenlijk als volgd:
+1. bdje
+```js 
+const gasBerekening = Math.round(((eigen[0] / nibud[0]) - 1) * 100);
+```
 
 ## Features
 - [ ] Gepersonaliseerde tips 
