@@ -1,7 +1,31 @@
-svg {
-    background-color: lightblue;
+
+/* 
+.bar {
+    fill: #566fb3;
 }
 
-.bar {
-    fill: purple;
+
+.barNibud {
+    stroke: #eebc32;
+    stroke-width: 3;
+
 }
+
+/* svg{
+    position: absolute;
+    margin-left: 10em;
+} */
+
+/* .lineNibud {
+    stroke: #eebc32;
+    stroke-width: 3;
+    stroke-linecap: square;
+}  */
+
+.bar--positive {
+    fill: darkorange;
+  }
+  
+.bar--negative {
+    fill: steelblue;
+  }

@@ -20,13 +20,18 @@
             <label for="huishouden">Huishouden</label>
             <select id="huishouden">
                 <option value="" selected disabled hidden>Kies een optie</option>
-                <option value="alleenstaand">Alleenstaand</option>
-                <option value="eenouder">Eenouder</option>
-                <option value="paar">Paar</option>
-                <option value="ouder paar">Ouder paar</option>
+                <option value="Alleenstaand">Alleenstaand</option>
+                <option value="Eenouder met 1 kind">Eenouder met 1 kind</option>
+                <option value="Eenouder met 2 kinderen">Eenouder met 2 kinderen</option>
+                <option value="Eenouder met 3 kinderen">Eenouder met 3 kinderen</option>
+                <option value="Paar met 1 kind">Paar met 1 kind</option>
+                <option value="Paar met 2 kinderen">Paar met 2 kinderen</option>
+                <option value="Paar met 3 kinderen">Paar met 3 kinderen</option>
+                <option value="Paar zonder kinderen">Paar zonder kinderen</option>
+                <option value="Ouder paar">Ouder paar</option>
             </select>
 
-            <div id="aantalKinderen">
+            <!-- <div id="aantalKinderen">
                 <label>Aantal kinderen</label>
                 <span>
                     <input type="radio" id="kind0" name="aantalkind0" value="0" class="kindInput">
@@ -47,19 +52,31 @@
                     <input type="radio" id="kind3" name="aantalkind3" value="3" class="kindInput">
                     <label for="kind3" class="kindLabel">3</label>
                 </span>
-            </div>
+            </div> -->
 
             <label for="wonen">Woonsituatie</label>
             <select id="wonen">
                 <option value="" selected disabled hidden>Kies een optie</option>
                 <option value="gemiddelde huur">Gemiddelde huur</option>
-                <option value="1,5 gemiddelde huur">1.5 keer gemiddelde huur</option>
+                <option value="1.5 gemiddelde huur">1.5 keer gemiddelde huur</option>
                 <option value="gemiddelde hypotheek">Gemiddelde hypotheek</option>
-                <option value="1,5 Gemiddelde hypotheek">1.5 keer gemiddelde hypotheek</option>
+                <option value="1.5 Gemiddelde hypotheek">1.5 keer gemiddelde hypotheek</option>
             </select>
 
-            <label for="inkomen">Inkomen per maand</label>
-            <input id="inkomen" class="stylePrijsInput" type="number" name="inkomen" value="" min="1">
+            <label for="inkomen">Inkomen</label>
+            <select id="inkomen">
+                <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="1500">1500</option>
+                <option value="2000">2000</option>
+                <option value="2500">2500</option>
+                <option value="3000">3000</option>
+                <option value="3500">3500</option>
+                <option value="4000">4000</option>
+                <option value="4500">4500</option>
+                <option value="5000">5000</option>
+            </select>
 
             <a>Terug</a>
             <a class="verderNaarStap2">Verder</a>
