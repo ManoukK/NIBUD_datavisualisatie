@@ -1,6 +1,8 @@
 # Budget Boksen 
 > Een tool voor het Nibud 
 
+> Let op! Voor de online versie word er een alternatieve dataset gebruikt. Het Nibud wilde niet dat de echte dataset waarmee wij werkte online kwam te staan dus hebben wij voor de online versie er zelf een gemaakt.  
+
 ## De opdracht 
 Voor deze opdracht hebben wij in een team gewerkt met drie mensen. Raven Lakerveld, Jasper Koenen en ik (Manouk Kappé). Jasper en Raven deden voornamelijk het visuele aspect van het concept en ik deed de technische kant. Later in het proces hebben zij mij ook geholpen met de website met html en css. 
 
@@ -25,9 +27,27 @@ Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen g
 - FOTO VAN WAT HIER BOVEN STAAT
 
 ## installatie 
-- via github 
-- d3.js
-- de dataset 
+Let op! Voor de online versie word er een alternatieve dataset gebruikt. Het Nibud wilde niet dat de echte dataset waarmee wij werkte online kwam te staan dus hebben wij voor de online versie er zelf een gemaakt. Wil je dit project gebruiken met de echte dataset vraag hier dan naar bij het Nibud. 
+
+In deze repo bovenin kun je dit project forken of downloaden. Dit doe je door op de groene knop te klikken. Als je dit project wilt gebruiken heb je D3.js nodig, jquery en de dataset. Voor meer informatie over de dataset vind je in het kopje hieronder. 
+
+### D3.js installeren
+Om gebruik te maken van de data visualisatie moet je de D3.js link in de html body hebben staan waar op je de data visualisatie wilt laten zien. Dit is de link. Let wel op dat je de juiste versie hebt. Ik heb zelf gewerkt in versie 5. Mocht er een nieuwe versie uit zijn let dan ook op dat de namen van de d3 elementen nog correct zijn, dit kan in de nieuwere versies veranderen. 
+
+Verder werk je met D3.js in een svg. Er zijn meerdere manieren om deze aan te maken. Ik heb de svg tag in mijn html gezet en daarin heb ik ook al de width en de height aan mee gegeven samen met een class. 
+```html
+<body>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <svg width="960" height="500" class=""></svg>
+</body>
+```
+
+### jquery installeren 
+Voor dit project hebben wij ook gebruik gemaakt van jquery. Dit gebruikte wij met name voor toggle functies en andere kleine javascript functies. Om jquery te installeren heb je ook weer een script tag nodig net zoals D3.js.
+```html
+<script src="js/jquery-3.4.1.min.js"></script>
+```
+
 
 ## De dataset 
 
