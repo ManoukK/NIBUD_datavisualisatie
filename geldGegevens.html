@@ -18,55 +18,46 @@
           <p>We brengen je situatie in kaart, geef aan welke opties het beste bij jouw situatie passen.</p>
             <label for="huishouden">Huishouden</label>
             <select id="huishouden" class="required" required>
-              <option value="" disabled selected>- Selecteer uw huishouden -</option>
-              <option value="alleenstaand">Alleenstaand</option>
-              <option value="eenouder">Één ouder</option>
-              <option value="paar">Paar</option>
-              <option value="ouder paar">Ouder paar</option>
+                <option value="" disabled selected>- Selecteer uw huishouden -</option>
+                <option value="Alleenstaand">Alleenstaand</option>
+                <option value="Eenouder met 1 kind">Eenouder met 1 kind</option>
+                <option value="Eenouder met 2 kinderen">Eenouder met 2 kinderen</option>
+                <option value="Eenouder met 3 kinderen">Eenouder met 3 kinderen</option>
+                <option value="Paar met 1 kind">Paar met 1 kind</option>
+                <option value="Paar met 2 kinderen">Paar met 2 kinderen</option>
+                <option value="Paar met 3 kinderen">Paar met 3 kinderen</option>
+                <option value="Paar zonder kinderen">Paar zonder kinderen</option>
+                <option value="Ouder paar">Ouder paar</option>
             </select>
-          <span id="spanHuishouden" class="required hideError">Please Enter Email Address</span>
-     
-            <label for="kinderen">Aantal kinderen</label>
-          <div class='radio_section' name="kinderen">
-            <input id="item-1" class="radio-inline__input" type="radio" name="accessible-radio" value="item-1"/>
-            <label class="radio-inline__label" for="item-1">
-              0
-            </label>
-      
-            <input id="item-2" class="radio-inline__input" type="radio" name="accessible-radio" value="item-2"/>
-             <label class="radio-inline__label" for="item-2">
-              1
-            </label>
-            
-            <input id="item-3" class="radio-inline__input" type="radio" name="accessible-radio" value="item-3"/>
-            <label class="radio-inline__label" for="item-3">
-              2
-            </label>
-            
-            <input id="item-4" class="radio-inline__input" type="radio" name="accessible-radio" value="item-4"/>
-            <label class="radio-inline__label" for="item-4">
-              3
-            </label>
-          </div>
-            
-          
-          
-          <label for="wonen">Woonsituatie</label>
-            <select id="wonen" required>
-              <option value="" disabled selected>- Selecteer uw woonsituatie -</option>
-              <option value="">Gemiddelde huur</option>
-              <option value="">1,5x Gemiddelde huur</option>
-              <option value="">Gemiddelde hypotheek</option>
-              <option value="">1,5x Gemiddelde hypotheek</option>
+
+            <!-- <span id="spanHuishouden" class="required hideError">Please Enter Email Address</span> -->
+
+            <label for="wonen">Woonsituatie</label>
+            <select id="wonen">
+                <option value="" disabled selected>- Selecteer uw woonsituatie -</option>
+                <option value="gemiddelde huur">Gemiddelde huur</option>
+                <option value="1.5 gemiddelde huur">1.5 keer gemiddelde huur</option>
+                <option value="gemiddelde hypotheek">Gemiddelde hypotheek</option>
+                <option value="1.5 Gemiddelde hypotheek">1.5 keer gemiddelde hypotheek</option>
             </select>
-          
-          <div class="navigation">
-            <a href="index.html" class="btn-previous">Terug naar Home</a>
-            <button class="verderNaarStap2 btn-next back-to-top">Verder</button>
-          </div>
-         
-        </fieldset>
-        
+
+            <label for="inkomen">Inkomen</label>
+            <select id="inkomen" required>
+                <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="1500">1500</option>
+                <option value="2000">2000</option>
+                <option value="2500">2500</option>
+                <option value="3000">3000</option>
+                <option value="3500">3500</option>
+                <option value="4000">4000</option>
+                <option value="4500">4500</option>
+                <option value="5000">5000</option>
+            </select>
+
+            <div class="navigation">
+                <a href="index.html" class="btn-previous">Terug naar Home</a>
+                <button class="verderNaarStap2 btn-next back-to-top">Verder</button>
+            </div>
         
         <fieldset id="formVasteLasten" class="stap2 hide">
           <legend>Vaste lasten</legend>
@@ -121,8 +112,6 @@
             </div>
             </div>
           </div>
-         
-          
           
           <div class="navigation">
             <a href="#" class="terugStap1 btn-previous back-to-top">Terug</a>
@@ -175,8 +164,7 @@
             <input id="overigeHuishoudelijkeUitgaven" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
             <i class="fas fa-euro-sign" aria-hidden="true"></i>
           </div>
-          </div>
-          
+          </div>  
         
           <div class="navigation">
             <a href="#" class="terugStap2 btn-previous back-to-top">Terug</a>
