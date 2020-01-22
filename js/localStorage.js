@@ -3,7 +3,6 @@
 // //bron: https://www.youtube.com/watch?v=k8yJCeuP6I8
 
 //https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
-
 function store(){
     // stap 1 van het formulier
     localStorage.setItem("huishouden", document.getElementById('huishouden').value);
@@ -29,46 +28,5 @@ function store(){
     localStorage.setItem("voeding", document.getElementById('voeding').value);
     localStorage.setItem("overige huishoudelijke uitgaven", document.getElementById('overigeHuishoudelijkeUitgaven').value);
 };
-
-
-// const result = {};
-
-// // stap 1 van het formulier
-// // result.huishouden = document.getElementById('huishouden').value;
-// // localStorage.setItem("aantal kinderen 0", document.getElementById('kind0').value);
-// // localStorage.setItem("aantal kinderen 1", document.getElementById('kind1').value);
-// // localStorage.setItem("aantal kinderen 2", document.getElementById('kind2').value);
-// // localStorage.setItem("aantal kinderen 3", document.getElementById('kind3').value);
-// // result.wonen = document.getElementById('wonen').value;
-// // result.inkomen = document.getElementById('inkomen').value;
-
-// //stap 2 van het formulier
-// result.gas = document.getElementById('gas').value;
-// result.elektriciteit = document.getElementById('elektriciteit').value;
-// result.water = document.getElementById('water').value;
-// result.vasteLasten = document.getElementById('lokaleLasten').value;
-// result.telefoonTVInternet = document.getElementById('telefoonTvInternet').value;
-// result.verzekeringen = document.getElementById('verzekeringen').value;
-// result.onderwijs = document.getElementById('onderwijs').value;
-// result.kinderopvang = document.getElementById('kinderopvang').value;
-// result.contributiesAbonnementen = document.getElementById('contributiesAbonnementen').value;
-// result.vervoer = document.getElementById('vervoer').value;
-//        //stap 3 van het formulier
-// result.kledingSchoenen = document.getElementById('kledingSchoenen').value;
-// result.inventaris = document.getElementById('inventaris').value;
-// result.onderhoudHuisTuin = document.getElementById('onderhoudHuisTuin').value;
-// result.nietVergoedeZiektekosten = document.getElementById('nietVergoedeZiektekosten').value;
-// result.vrijetijdsuitgaven = document.getElementById('vrijetijdsuitgaven').value;
-// result.voeding = document.getElementById('voeding').value;
-// result.overigeHuishoudelijkeUitgaven = document.getElementById('overigeHuishoudelijkeUitgaven').value;
-       
-
-// memories = localStorage.getItem('memories') ?
-//               JSON.parse(localStorage.getItem('memories')) : 
-//               [];
-// memories.push(result);
-// localStorage.setItem('memories', JSON.stringify(memories));
-
-// console.log(result);
 
 

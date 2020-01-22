@@ -1,27 +1,3 @@
-
-/* 
-.bar {
-    fill: #566fb3;
-}
-
-
-.barNibud {
-    stroke: #eebc32;
-    stroke-width: 3;
-
-}
-
-/* svg{
-    position: absolute;
-    margin-left: 10em;
-} */
-
-/* .lineNibud {
-    stroke: #eebc32;
-    stroke-width: 3;
-    stroke-linecap: square;
-}  */
-
 .bar--positive {
     fill: darkorange;
   }
@@ -29,3 +5,60 @@
 .bar--negative {
     fill: steelblue;
   }
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    color: #707070;
+    padding: 0
+}
+
+img {
+    width: 4em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+h2 {
+    color: #F3B352;
+}
+
+li {
+    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+button {
+    background-color: #F3B352;
+    color: white;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.buttoncontainer {
+    text-align: center;
+}
+
+div.kolom {
+    padding-right: 3em;
+    padding-left: 3em;
+    width: 280px;
+}
+
+
+hr {
+    color: #C4C4C4;
+}

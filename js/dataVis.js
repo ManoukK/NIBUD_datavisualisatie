@@ -568,19 +568,19 @@ function renderPersoonlijk(procentenArray){
       .text('Posten');
 
     //de teksten onder aan rotaten 
-  g.call(d3.axisBottom(xScale))
-  	.selectAll('.tick text')var tickNeg = svg
-				.append("g")
-				.attr("class", "yaxis")
-				.attr("transform", "translate(" + x(0) + ",0)")
-				.call(axisLeft(y))
-				.selectAll(".tick")
-				.filter(function(d, i) { return data[i].value < 0; });
-  		.attr('y', 20)
-  		//35 graden draaien
-  		// .attr('transform', `rotate(35)`)
-  		// // de anchor van de teksten staan bij start, dus onder de bar waar ze bijhoren
-  		// .style('text-anchor', 'start');
+  // g.call(d3.axisBottom(xScale))
+  // 	.selectAll('.tick text')
+	// 			.append("g")
+	// 			.attr("class", "yaxis")
+	// 			.attr("transform", "translate(" + x(0) + ",0)")
+	// 			.call(axisLeft(y))
+	// 			.selectAll(".tick")
+	// 			.filter(function(d, i) { return data[i].value < 0; })
+  // 		  .attr('y', 20)
+  // 		//35 graden draaien
+  // 		// .attr('transform', `rotate(35)`)
+  // 		// // de anchor van de teksten staan bij start, dus onder de bar waar ze bijhoren
+  // 		// .style('text-anchor', 'start');
 
   g.append('g')
     .call(d3.axisLeft(yScale))
