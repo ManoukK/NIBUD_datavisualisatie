@@ -1,6 +1,6 @@
 :root {
     /* kleuren */
-    --donkerBlauw: #2699FB;
+    --shadowBlauw: #2699FB;
     --middelDonkerBlauw: #7FC4FD;
     --middelBlauw: #BCE0FD;
     --lichtBlauw: #F1F9FF;
@@ -42,7 +42,7 @@ label {
     margin-top: 2em;
     margin-bottom: 0.5em;
     font-size: var(--leesTekst);
-    color: var(--donkerBlauw);
+    color: var(--shadowBlauw);
 }
 
 input {
@@ -53,7 +53,7 @@ input {
     border-radius: 10px;
     padding-left: 1em;
     font-size: var(--leesTekst);
-    color: var(--donkerBlauw);
+    color: var(--shadowBlauw);
 }
 
 div {

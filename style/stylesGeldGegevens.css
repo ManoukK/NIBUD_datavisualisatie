@@ -255,13 +255,3 @@ input:invalid {
     outline-style: auto;
     outline-width: 5px;
 }
-
-/* ERRORS & Validation */
-.hideError {
-  display: none;
-}
-
-.showError {
-  display: block;
-  color: #DC3C14;
-}
