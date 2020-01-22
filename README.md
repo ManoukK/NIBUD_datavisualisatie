@@ -1,8 +1,6 @@
 # Budget Boksen 
 ### Een tool voor het Nibud 
 
-### verder bijvullen!!!!! 
-
 ## De opdracht 
 Voor deze opdracht hebben wij in een team gewerkt met drie mensen. Raven Lakerveld, Jasper Koenen en ik (Manouk Kappé). Jasper en Raven deden voornamelijk het visuele aspect van het concept en ik deed de technische kant. Later in het proces hebben zij mij ook geholpen met de website met html en css. 
 
