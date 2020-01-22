@@ -27,7 +27,8 @@ Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen g
 
 ## De dataset 
 
-## Als we meer tijd hadden gehad
+## Features
+-[] test
 
 ## Documentatie in de wiki
 
