@@ -28,10 +28,27 @@ Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen g
 ## De dataset 
 
 ## Features
-- [ ] test
+- [ ] Gepersonaliseerde tips 
+- [ ] Webpage met alle tips 
+- [ ] Beter stap 1 formulier (bijvoorbeeld aantal kinderen en huishouden opgesplists)
+- [ ] Animaties  
 
 ## Documentatie in de wiki
+- Het proces van de data visualisatie: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Mijn-proces
+- Hoe werkt de bar chart: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Hoe-werkt-de-bar-chart
+- Hoe zit de dataset in elkaar: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/De-dataset-van-het-Nibud
 
 ## Bronnenlijst
+Hier onder zie je een bronnenlijst met de belangrijkste of grootste elementen uit dit concept. Uiteraard heb ik ook veel kleine dingentjes op gezocht. Deze staan in de comments in de code vermeld. 
+
+- Het grafiek met negatieve en positieve waardes: https://bl.ocks.org/mbostock/2368837
+- Een basis grafiek van Curran: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7
+- Local storage: https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
+- De dataset opschonen: Roy Csuka, https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
 
 ## credits voor: 
+- Jasper Koenen, die heel erg veel html en css heeft geschreven voor dit project 
+- Raven Laverveld, Die mee hielp met html en css en de afbeeldingen heeft gemaakt
+- Roy Csuka, die zijn opschoon code met mij wilde delen
+- Mamoun Othman, die in stack overflow mij heeft geholpen met een bar chart op basis van local storage (https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work)
+- Laurens Aarnoudse, die mij heeft geholpen met het bedenken van een berekening zodat ik alle procentuele cijfers kreeg, relatief gezien van wat het Nibud adviseerd
