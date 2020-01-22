@@ -41,17 +41,6 @@ nav svg {
     text-transform: uppercase;
 }
 
-/* form {
-    position: absolute;
-    background-color: var(--wit);
-    left: 0em;
-    right: 0em;
-    box-shadow: 0px 4px 7px #2699FB29;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4em;
-} */
-
 fieldset {
     position: relative;
     margin: 2em;
@@ -96,7 +85,6 @@ input:active, input:focus {
     outline-color: transparent;
     outline-style: none;
 }
-
 
 #hoofdKnop {
     color: var(--wit);
