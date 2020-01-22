@@ -6,18 +6,14 @@
     <title>NIBUD tool</title>
     <link rel="stylesheet" type="text/css" href="style/styles.css">
     <link rel="stylesheet" type="text/css" href="style/stylesInlog.css">
+    <link rel="stylesheet" href="style/animista.css">
 </head>
 
 <body>
-    <nav>
-        <svg style="width:100%;height:45;">
-            <line x1="100%" y1="100%" x2="0%" y2="100%" style="stroke:#F1F9FF;stroke-width: 45;"></line>
-        </svg>
-    </nav>
 
-    <div>
-        <form class="login" action="cijfersInvullenStapEen.html">
-            <fieldset>
+    
+        <form class="form-box scale-up-center" action="cijfersInvullenStapEen.html">
+            <fieldset class="login">
                 <legend>Inloggen</legend>
                 
                 <label for="email">Email</label>
@@ -26,16 +22,16 @@
                 <label for="wachtwoord">Wachtwoord</label>
                 <input type="password" name="login" id="wachtwoord" placeholder="********" required minlength="8"
                     maxlength="24">
-                <a class="vergeten">wachtwoord vergeten?</a>
                 
             </br>
-                <a id="subKnop" class="aanmelden-registreren">aanmelden</a>
-                <a id="hoofdKnop" type="submit" value="aanmelden" href="geldGegevens.html">Log in</a>
-            </fieldset>
-        </form>
+            <div class="navigation">
+                <a class="btn-previous aanmelden-registreren">aanmelden</a>
+                <a href="geldGegevens.html" type="submit" value="aanmelden" class="btn-next">Log in</a>
+            </div>
 
-        <form class="aanmelden hide" action="cijfersInvullenStapEen.html">
-            <fieldset>
+            </fieldset>
+
+            <fieldset class="aanmelden hide">
                 <legend>Aanmelden</legend>
                 
                 <label for="naam">Naam</label>
@@ -51,70 +47,15 @@
                 <input id="wachtwoord" type="password" name="login" placeholder="********" value="">
 
                 </br>
-                <a id="subKnop" class="aanmelden-registreren">log in</a>
-                <a id="hoofdKnop" type="submit" value="aanmelden" href="geldGegevens.html">aanmelden</a>
+
+                <div class="navigation">
+                    <a class="btn-previous aanmelden-registreren">Log in</a>
+                    <a href="geldGegevens.html" type="submit" value="aanmelden" class="btn-next">Aanmelden</a>
+                </div>
 
             </fieldset>
         </form>
 
-        <form class="forgotten hide" action="login.html">
-            <fieldset>
-                <legend>Wachtwoord vergeten</legend>
-                
-                <label for="email">Email</label>
-                <input type="email" name="login" placeholder="naam@email.nl" required>
-            </br>
-                <a id="subKnop" class="vergeten">inloggen?</a>
-                <a id="hoofdKnop" type="submit" value="verzenden">E-mail wachtwoord reset link</a>
-
-            </fieldset>
-        </form>
-    </div>
-    <!-- <form class="form-inloggen">
-        <fieldset>
-            <legend>Login</legend>
-
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="login" value="">
-
-            <label for="wachtwoord">Wachtwoord</label>
-            <input id="wachtwoord" type="password" name="login" value="">
-
-            <a id="wachtwoordVergeten" href="wwVergeten.html">Wachtwoord vergeten?</a>
-
-            <div>
-                <a id="subKnop" class="algemeneKnopStyling aanmelden-knop">Aanmelden</a>
-                <a id="hoofdKnop" class="algemeneKnopStyling" href="">Inloggen</a>
-            </div>
-
-        </fieldset>
-
-    </form>
-
-    <form class="form-aanmelden hide">
-        <fieldset>
-            <legend>Aanmelden</legend>
-
-            <label for="naam">Naam</label>
-            <input id="naam" type="text" name="login" value="">
-
-            <label for="email">E-mail</label>
-            <input id="email" type="email" name="login" value="">
-
-            <label for="wachtwoord">Wachtwoord</label>
-            <input id="wachtwoord" type="password" name="login" value="">
-
-            <label for="wachtwoord">Herhaal wachtwoord</label>
-            <input id="wachtwoord" type="password" name="login" value="">
-
-            <div>
-                <a id="subKnop" class="algemeneKnopStyling inloggen-knop" href="login.html">Inloggen</a>
-                <a id="hoofdKnop" class="algemeneKnopStyling" href="">Aanmelden</a>
-            </div>
-
-        </fieldset>
-
-    </form> -->
 
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>

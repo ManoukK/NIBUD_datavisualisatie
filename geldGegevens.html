@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>NIBUD tool</title>
-    <link rel="stylesheet" type="text/css" href="style/styles.css">
     <link rel="stylesheet" type="text/css" href="style/stylesGeldGegevens.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style/animista.css">
 </head>
+
 <body>
-    <nav>
-        <svg style="width:100%;height:45;">
-            <line x1="100%" y1="100%" x2="0%" y2="100%" style="stroke:#F1F9FF;stroke-width: 45;"></line>
-        </svg>
-    </nav>
 
-    <form class="form-box">
-            <img src="/images/placeholder.png"> 
+    <form action="" class="form-box slide-in-top">
 
-        <fieldset id="formSituatie" class="stap1 ">
+        <fieldset id="formSituatie" class="stap1 scale-up-center">
+          
+          <legend>Situatie</legend>
+          <p>We brengen je situatie in kaart, geef aan welke opties het beste bij jouw situatie passen.</p>
             <label for="huishouden">Huishouden</label>
-            <select id="huishouden">
-                <option value="" selected disabled hidden>Kies een optie</option>
+            <select id="huishouden" class="required" required>
+                <option value="" disabled selected>- Selecteer uw huishouden -</option>
                 <option value="Alleenstaand">Alleenstaand</option>
                 <option value="Eenouder met 1 kind">Eenouder met 1 kind</option>
                 <option value="Eenouder met 2 kinderen">Eenouder met 2 kinderen</option>
@@ -31,32 +30,11 @@
                 <option value="Ouder paar">Ouder paar</option>
             </select>
 
-            <!-- <div id="aantalKinderen">
-                <label>Aantal kinderen</label>
-                <span>
-                    <input type="radio" id="kind0" name="aantalkind0" value="0" class="kindInput">
-                    <label for="kind0" class="kindLabel">0</label>
-                </span>
-
-                <span>
-                    <input type="radio" id="kind1" name="aantalkind1" value="1" class="kindInput">
-                    <label for="kind1" class="kindLabel">1</label>
-                </span>
-
-                <span>
-                    <input type="radio" id="kind2" name="aantalkind2" value="2" class="kindInput">
-                    <label for="kind2" class="kindLabel">2</label>
-                </span>
-
-                <span>
-                    <input type="radio" id="kind3" name="aantalkind3" value="3" class="kindInput">
-                    <label for="kind3" class="kindLabel">3</label>
-                </span>
-            </div> -->
+            <!-- <span id="spanHuishouden" class="required hideError">Please Enter Email Address</span> -->
 
             <label for="wonen">Woonsituatie</label>
             <select id="wonen">
-                <option value="" selected disabled hidden>Kies een optie</option>
+                <option value="" disabled selected>- Selecteer uw woonsituatie -</option>
                 <option value="gemiddelde huur">Gemiddelde huur</option>
                 <option value="1.5 gemiddelde huur">1.5 keer gemiddelde huur</option>
                 <option value="gemiddelde hypotheek">Gemiddelde hypotheek</option>
@@ -64,7 +42,7 @@
             </select>
 
             <label for="inkomen">Inkomen</label>
-            <select id="inkomen">
+            <select id="inkomen" required>
                 <option value="" selected disabled hidden>Kies een optie</option>
                 <option value="500">500</option>
                 <option value="1000">1000</option>
@@ -78,71 +56,127 @@
                 <option value="5000">5000</option>
             </select>
 
-            <a>Terug</a>
-            <a class="verderNaarStap2">Verder</a>
-        </fieldset> 
-
+            <div class="navigation">
+                <a href="index.html" class="btn-previous">Terug naar Home</a>
+                <button class="verderNaarStap2 btn-next back-to-top">Verder</button>
+            </div>
+        
         <fieldset id="formVasteLasten" class="stap2 hide">
-            <label for="gas">Gas</label>
-            <input id="gas" class="stylePrijsInput" type="number" name="gas" value="" min="1">
+          <legend>Vaste lasten</legend>
+          <p>Hoeveel ben je kwijt in euro's per maand?</p>
 
-            <label for="elektriciteit">Elektriciteit</label>
-            <input id="elektriciteit" class="stylePrijsInput" type="number" name="elektriciteit" value="" min="1">
-
-            <label for="water">Water</label>
-            <input id="water" class="stylePrijsInput" type="number" name="water" value="" min="1">
-
-            <label for="lokaleLasten">Lokale lasten</label>
-            <input id="lokaleLasten" class="stylePrijsInput" type="number" name="lokaleLasten" value="" min="1">
-
-            <label for="telefoonTvInternet">Telefoon, TV en internet</label>
-            <input id="telefoonTvInternet" class="stylePrijsInput" type="number" name="telefoonTvInternet" value="" min="1">
-
-            <label for="verzekeringen">Verzekeringen</label>
-            <input id="verzekeringen" class="stylePrijsInput" type="number" name="verzekeringen" value="" min="1">
-
-            <label for="onderwijs">Onderwijs</label>
-            <input id="onderwijs" class="stylePrijsInput" type="number" name="onderwijs" value="" min="1">
-
-            <label for="kinderopvang">Kinderopvang</label>
-            <input id="kinderopvang" class="stylePrijsInput" type="number" name="kinderopvang" value="" min="1">
-
-            <label for="contributiesAbonnementen">Contributies en abonnementen</label>
-            <input id="contributiesAbonnementen" class="stylePrijsInput" type="number" name="contributiesAbonnementen" value="" min="1">
-
-            <label for="vervoer">Vervoer</label>
-            <input id="vervoer" class="stylePrijsInput" type="number" name="vervoer" value="" min="1">
-
-            <a class="terugStap1">Terug</a>
-            <a class="verderNaarStap3">Verder</a>
+            <label for="input">Onderwijs</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Elektriciteit</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Lokale lasten</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Vervoer</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Contributies en abbonementen</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Gas</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Water</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            
+            <label for="input">Telefoon, TV en Internet</label>
+            <div class="inputWithIcon inputIconBg">
+              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+            </div>
+          </div>
+         
+          
+          
+          <div class="navigation">
+            <a href="#" class="terugStap1 btn-previous back-to-top">Terug</a>
+            <a class="verderNaarStap3 btn-next back-to-top">Verder</a>
+          </div>
         </fieldset>
-
+        
         <fieldset id="formOverig" class="stap3 hide">
-            <label for="kledingSchoenen">Kleding en schoenen</label>
-            <input id="kledingSchoenen" class="stylePrijsInput" type="number" name="kledingSchoenen" value="" min="1">
-
-            <label for="inventaris">Inventaris</label>
-            <input id="inventaris" class="stylePrijsInput" type="number" name="inventaris" value="" min="1">
-
-            <label for="onderhoudHuisTuin">Onderhoud huis en tuin</label>
-            <input id="onderhoudHuisTuin" class="stylePrijsInput" type="number" name="onderhoudHuisTuin" value="" min="1">
-
-            <label for="nietVergoedeZiektekosten">Niet vergoede ziektekosten</label>
-            <input id="nietVergoedeZiektekosten" class="stylePrijsInput" type="number" name="nietVergoedeZiektekosten" value="" min="1">
-
-            <label for="vrijetijdsuitgaven">Vrijetijdsuitgaven</label>
-            <input id="vrijetijdsuitgaven" class="stylePrijsInput" type="number" name="vrijetijdsuitgaven" value="" min="1">
-
-            <label for="voeding">Voeding</label>
-            <input id="voeding" class="stylePrijsInput" type="text" name="voeding" min="1">
-
-            <label for="overigeHuishoudelijkeUitgaven">Overige huishoudelijke uitgaven</label>
-            <input id="overigeHuishoudelijkeUitgaven" class="stylePrijsInput" type="number" name="overigeHuishoudelijkeUitgaven" value="" min="1">
-
-            <a class="terugStap2">Terug</a>
-            <a id="formOpslaan" onclick="store()" href="datavisPage.html" >submit!</a>
+          <legend>Uitgaven</legend>
+          <p>Hoeveel was je kwijt in euro's afgelopen maand?</p>
+          
+            <label for="input">Vrijetijdsuitgaven</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="vrijetijdsuitgaven" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          
+          <label for="input">Kleding en schoenen</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="kledingSchoenen" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          
+          <label for="input">Onderhoud huis en tuin</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="onderhoudHuisTuin" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          
+          <label for="input">Inventaris</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="inventaris" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          
+          <label for="input">Niet vergoede ziektekosten</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="nietVergoedeZiektekosten" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          
+          <label for="input">Voeding</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="voeding" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          
+          <label for="input">Overige huishoudelijke uitgaven</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="overigeHuishoudelijkeUitgaven" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+          </div>
+          
+        
+          <div class="navigation">
+            <a href="#" class="terugStap2 btn-previous back-to-top">Terug</a>
+            <a id="formOpslaan" onclick="store()" href="datavisPage.html" class="verderNaarStap2 btn-next">Opslaan</a>
+          </div>
         </fieldset>
-    </form>
+      </form>
     
 </body>
     <script src="js/jquery-3.4.1.min.js"></script>
