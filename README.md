@@ -55,11 +55,20 @@ Het Nibud wilt liever niet dat we hun dataset die wij gebruiken online komt te s
 
 #### De dataset van het Nibud, hoe ziet dat er uit?
 Ik wil/kan niet helemaal vrij geven hoe de dataset eruit ziet maar ik laat de alternatieve dataset zien. 
+In het excel bestand ziet de dataset er zo uit: 
+
+![Schermafbeelding 2020-01-22 om 13 10 52](https://user-images.githubusercontent.com/45541885/72893460-54899180-3d19-11ea-9605-1af9da81e060.png)
+
+De categorieën waar ik mee heb gewerkt in de data visualisatie waren eigenlijk alleen maar post en bedrag. Om persoonlijk advies te krijgen heb ik filters gemaakt die kijkt naar wat je inkomen is, je woonsituatie en je huishouden. Op basis van die gegevens word de rest die niet overeenkomt met deze gegevens weggefilterd. Zo hou je uiteindelijk een kleine array over met bedragen die het nibud adviseerd per post. 
+
+### Code voor de twee datasets in javascript
+Omdat we nu werken met een alternatieve dataset heb ik wat code moeten toevoegen en wat code moeten uit zetten. Hier ga ik uitleggen wat je aan en uit moet zetten als je met de echte dataset te werk gaat. 
+
+
 
 
 uitleggen
 - hoe de code werkt met en zonder echte data
-- hoe de dataset werkt (wat er in zit) 
 
 ## Features
 - [ ] Gepersonaliseerde tips 
@@ -70,7 +79,6 @@ uitleggen
 ## Documentatie in de wiki
 - Het proces van de data visualisatie: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Mijn-proces
 - Hoe werkt de bar chart: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Hoe-werkt-de-bar-chart
-- Hoe zit de dataset in elkaar: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/De-dataset-van-het-Nibud
 
 ## Bronnenlijst
 Hier onder zie je een bronnenlijst met de belangrijkste of grootste elementen uit dit concept. Uiteraard heb ik ook veel kleine dingentjes op gezocht. Deze staan in de comments in de code vermeld. 
