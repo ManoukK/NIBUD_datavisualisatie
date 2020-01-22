@@ -62,13 +62,36 @@ In het excel bestand ziet de dataset er zo uit:
 De categorieën waar ik mee heb gewerkt in de data visualisatie waren eigenlijk alleen maar post en bedrag. Om persoonlijk advies te krijgen heb ik filters gemaakt die kijkt naar wat je inkomen is, je woonsituatie en je huishouden. Op basis van die gegevens word de rest die niet overeenkomt met deze gegevens weggefilterd. Zo hou je uiteindelijk een kleine array over met bedragen die het nibud adviseerd per post. 
 
 ### Code voor de twee datasets in javascript
-Omdat we nu werken met een alternatieve dataset heb ik wat code moeten toevoegen en wat code moeten uit zetten. Hier ga ik uitleggen wat je aan en uit moet zetten als je met de echte dataset te werk gaat. 
+Omdat we nu werken met een alternatieve dataset heb ik wat code moeten toevoegen en wat code moeten uit zetten. Hier ga ik uitleggen wat je aan en uit moet zetten als je met de echte dataset te werk gaat. Dit heb ik in het javascript bestand ook met commends aangegeven maar het is ook fijn en makkelijk als ik het hier duidelijk even neer zet. 
+
+Deze codes staan allemaal in het dataVis.js bestand. 
+
+Allereerst moet je bij het inladen van de csv de juiste dataset link aangeven.
+```js
+const dataNibud = d3.csv('/data/AlternatiefDataset.csv')
+```
+
+Vervolgens moet je deze code:
+```js
+.then(dataNibud  => {
+    console.log("opgeschoonde data", dataNibud)
+    const inkomenFilter = dataNibud;
+    itemsVerwijderen(inkomenFilter)
+  })
+```
+vervangen voor deze code (in het javascript bestand kan je het gewoon uit en aan zetten):
+```js
+.then(dataNibud  => {
+    console.log("opgeschoonde data", dataNibud)
+    comment deze code aan als je werkt met de officiele dataset:
+    opschonenHuishouden(dataNibud);
+  })
+```
+Voor de alternatieve dataset kan je de filterstappen overslaan. Om het over te slaan en niet veel aan de code aan te hoeven passen heb ik deze regel code geschreven: const inkomenFilter = dataNibud.
+
+Als je met de echte dataset werkt moet je het tweede stukje code gebruiken. In de function opschonenHuishouden(dataNibud) word alles gefilterd tot een kleine gepersonaliseerde array.
 
 
-
-
-uitleggen
-- hoe de code werkt met en zonder echte data
 
 ## Features
 - [ ] Gepersonaliseerde tips 
@@ -87,10 +110,11 @@ Hier onder zie je een bronnenlijst met de belangrijkste of grootste elementen ui
 - Een basis grafiek van Curran: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7
 - Local storage: https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
 - De dataset opschonen: Roy Csuka, https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
+- Animaties komen van Animista: https://animista.net/
 
 ## credits voor: 
-- Jasper Koenen, die heel erg veel html en css heeft geschreven voor dit project 
-- Raven Laverveld, Die mee hielp met html en css en de afbeeldingen heeft gemaakt
+- Jasper Koenen, die veel html en css heeft geschreven voor dit project 
+- Raven Laverveld, Die mee hielp met html en css en de afbeeldingen en iconen heeft gemaakt
 - Roy Csuka, die zijn opschoon code met mij wilde delen
 - Mamoun Othman, die in stack overflow mij heeft geholpen met een bar chart op basis van local storage (https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work)
 - Laurens Aarnoudse, die mij heeft geholpen met het bedenken van een berekening zodat ik alle procentuele cijfers kreeg, relatief gezien van wat het Nibud adviseerd
