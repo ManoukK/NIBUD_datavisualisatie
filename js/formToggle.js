@@ -1,26 +1,26 @@
 //verder door de form heen 
 $('.verderNaarStap2').on('click',function() {
-    $('.stap1').addClass('hide');
-    $('.stap2').removeClass('hide');
+    $('.stap1').toggleClass('hide');
+    $('.stap2').toggleClass('hide');
 });
 
 $('.verderNaarStap3').on('click',function() {
-    $('.stap2').addClass('hide');
-    $('.stap3').removeClass('hide');
+    $('.stap2').toggleClass('hide');
+    $('.stap3').toggleClass('hide');
 });
 
 //eventueel hier code voor verder naar datavis
 
 //teurg door de form heen (beginnen bij stap 3)
 $('.terugStap2').on('click',function() {
-    $('.stap2').removeClass('hide');
-    $('.stap3').addClass('hide');
+    $('.stap2').toggleClass('hide');
+    $('.stap3').toggleClass('hide');
 });
 
 $('.terugStap1').on('click',function() {
     $('#formSituatie').removeClass('scale-up-center');
-    $('.stap1').removeClass('hide');
-    $('.stap2').addClass('hide');
+    $('.stap1').toggleClass('hide');
+    $('.stap2').toggleClass('hide');
 });
 
 

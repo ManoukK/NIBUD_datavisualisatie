@@ -5,19 +5,39 @@
     <title>NIBUD tool</title>
     <link rel="stylesheet" type="text/css" href="style/styles.css">
     <link rel="stylesheet" type="text/css" href="style/stylesDatavis.css">
+    <link rel="stylesheet" type="text/css" href="style/animista.css">
+
 </head>
 <body>
-    <script src="https://d3js.org/d3.v5.js"></script>
+    <svg width="960" height="500" class="datavis"></svg>
+<section>
+    <article class="info-block">
+        <h1 class="scale-in-center">Grootste </br> kostenposten <br> <span>& bespaartips</span></h1>
+        <ul>
+            <li>1. Verzekeringen</li>
+            <li>2. Gas</li>
+            <li>3. Telefoon, tv, internet</li>
+        </ul>
+    </article>   
 
-    <h1>Data visualisatie</h1>
-    <svg width="960" height="500" class="persoonlijk"></svg>
-    <svg width="960" height="500" class="nibud"></svg>
-
-    <div class="container">
-        <div class="kolom">
+    <div class="intro">
+            <img src="images/graphics/bars.svg" alt="" id="bars" class="scale-in-hor-right">
+        <article class="samenvatting">
+            <h1 class="scale-in-center">Grootste </br> kostenposten <br> <span>& bespaartips</span></h1>
+            <ul>
+                <li>1. Verzekeringen</li>
+                <li>2. Gas</li>
+                <li>3. Telefoon, tv, internet</li>
+            </ul>
+        </article>   
+        <img src="images/graphics/handschoen.svg" alt="" id="handschoen" class="swing-in-top-fwd rotate-90-top-cw">
+    </div>
+    
+    <article class="container slide-in-left">
+        <article class="kolom">
             <img src="images/icon_verzekeringen.svg">
             <h2>1. Verzekeringen</h2>
-            <ul>
+            <ul class="ul_tips">
                 <li>
                     Verzeker je alleen als je de kosten zelf niet kunt ophoesten
                     <hr />
@@ -39,11 +59,11 @@
                     <hr />
                 </li>
             </ul>
-        </div>
-        <div class="kolom">
+        </article>
+        <article class="kolom">
             <img src="images/icon_gas.svg">
             <h2>2. Gas</h2>
-            <ul>
+            <ul class="ul_tips">
                 <li>
                     Schaf een moderne hr-ketel aan
                     <hr />
@@ -61,11 +81,11 @@
                     <hr />
                 </li>
             </ul>
-        </div>
-        <div class="kolom">
+        </article>
+        <article class="kolom">
             <img src="images/icon_tv.svg">
             <h2>3. Telefoon, TV, Internet</h2>
-            <ul>
+            <ul class="ul_tips">
                 <li>
                     Liever een duurdere bundel, dan boven bundel uitkomen
                     <hr />
@@ -87,16 +107,24 @@
                     <hr />
                 </li>
             </ul>
-        </div>
-    </div>
+        </article>
+    </article>
 
     <div class="buttoncontainer">
-        <button id="click">Bekijk alle bespaartips</button>
+        <a class="btn-next">Bekijk alle bespaartips</a>
     </div>
+</section>
+    
+
+    <footer>
+        <a href="index.html"><img src="images/logo_v_bg.svg" alt="logo BudgetBoksen"></a>
+    </footer>
 
 </body>
+    <script src="https://d3js.org/d3.v5.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="/js/dataVis.js"></script>
     <script src="/js/localStorage.js"></script>
     <script src="/js/test.js"></script>
+    <script src="/js/animationstrigger.js"></script>
 </html>

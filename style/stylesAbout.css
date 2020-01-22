@@ -1,5 +1,5 @@
 :root {
-    --donkerBlauw: #2699FB;
+    --shadowBlauw: #2699FB;
     --middelBlauw: #BCE0FD;
     --lichtBlauw: #F1F9FF;
     --wit: #ffffff;
@@ -19,7 +19,7 @@ h1 {
     margin-top: 5em;
     margin-left: 52%;
     margin-right: 10em;
-    color: var(--donkerBlauw);
+    color: var(--shadowBlauw);
     font-size: var(--hoofdTitel);
 }
 
@@ -67,7 +67,7 @@ article h2 {
     right: 0;
     text-align: center;
     font-size: var(--subTitel);
-    color: var(--donkerBlauw);
+    color: var(--shadowBlauw);
 }
 
 article p {
