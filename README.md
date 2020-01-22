@@ -14,7 +14,7 @@ Het liefst wilde zij een datavisualisatie hebben die gemaakt was in Tableau. Het
 ## Het concept 
 Ons concept heet Budget Boksen.
 
-#### Dit is de data visualisatie pagina van onze website. Dit is gemaakt in Adobe XD en niet in code
+##### Dit is de data visualisatie pagina van onze website. Dit is gemaakt in Adobe XD en niet in code
 ![Visualisatie – 21](https://user-images.githubusercontent.com/45541885/72887194-809e1600-3d0b-11ea-8347-cfb753f59698.jpg)
 
 Onze doelgroep voor dit concept is iemand die in de schulden dreigt te raken maar er nog niet diep in zit. Diegene heeft dan ook zelf een budget coach ingeschakeld en is bereid/gemotiveerd om zijn geld zaken weer op orde te hebben. 
@@ -23,7 +23,7 @@ Het doel met onze tool is om het gesprek te starten tussen de doelgroep en de bu
 
 Het concept zelf werkt alsvolgt: iemand gaan naar de budget coach toe en samen gaan zij naar onze website zij vullen het formulier in met de juiste bedragen/gegevens en vervolgens krijgen zij een grafiek te zien. In het grafiek zie je hoeveel porcent je boven of onder zit ten opzichte van het advies van Nibud. Zo kan je zien of je relatief meer of minder uitgeeft dan wat er geadviseerd word. Onder het grafiek worden er tips getoont en kan de doelgroep samen met de budget coach bepalen wat hij die maand wilt bereiken en waar hij op moet letten. 
 
-#### Dit is de eind versie van de data visualisatie pagina van onze website
+##### Dit is de eind versie van de data visualisatie pagina van onze website
 - FOTO VAN WAT HIER BOVEN STAAT
 
 ## installatie 
@@ -31,7 +31,7 @@ Let op! Voor de online versie word er een alternatieve dataset gebruikt. Het Nib
 
 In deze repo bovenin kun je dit project forken of downloaden. Dit doe je door op de groene knop te klikken. Als je dit project wilt gebruiken heb je D3.js nodig, jquery en de dataset. Voor meer informatie over de dataset vind je in het kopje hieronder. 
 
-### D3.js installeren
+#### D3.js installeren
 Om gebruik te maken van de data visualisatie moet je de D3.js link in de html body hebben staan waar op je de data visualisatie wilt laten zien. Dit is de link. Let wel op dat je de juiste versie hebt. Ik heb zelf gewerkt in versie 5. Mocht er een nieuwe versie uit zijn let dan ook op dat de namen van de d3 elementen nog correct zijn, dit kan in de nieuwere versies veranderen. 
 
 Verder werk je met D3.js in een svg. Er zijn meerdere manieren om deze aan te maken. Ik heb de svg tag in mijn html gezet en daarin heb ik ook al de width en de height aan mee gegeven samen met een class. 
@@ -42,12 +42,12 @@ Verder werk je met D3.js in een svg. Er zijn meerdere manieren om deze aan te ma
 </body>
 ```
 
-### jquery installeren 
+#### jquery installeren 
 Voor dit project hebben wij ook gebruik gemaakt van jquery. Dit gebruikte wij met name voor toggle functies en andere kleine javascript functies. Om jquery te installeren heb je ook weer een script tag nodig net zoals D3.js.
 ```html
 <script src="js/jquery-3.4.1.min.js"></script>
 ```
-### Let op!
+#### Let op!
 Als je met de echte dataset te werk gaat van het Nibud. Lees dan ook de tekst onder het kopje: De dataset. 
 
 ## De dataset 
