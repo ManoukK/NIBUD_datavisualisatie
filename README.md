@@ -14,6 +14,9 @@ Het liefst wilde zij een datavisualisatie hebben die gemaakt was in Tableau. Het
 ## Het concept 
 Ons concept heet Budget Boksen.
 
+#### Dit is de data visualisatie pagina van onze website. Dit is gemaakt in Adobe XD en niet in code
+![Visualisatie – 21](https://user-images.githubusercontent.com/45541885/72887194-809e1600-3d0b-11ea-8347-cfb753f59698.jpg)
+
 Onze doelgroep voor dit concept is iemand die in de schulden dreigt te raken maar er nog niet diep in zit. Diegene heeft dan ook zelf een budget coach ingeschakeld en is bereid/gemotiveerd om zijn geld zaken weer op orde te hebben. 
 
 Het doel met onze tool is om het gesprek te starten tussen de doelgroep en de budget coach. Het is de bedoeling dat diegene inzicht krijgt in zijn huidige uitgaven en waar er mogelijkheden liggen om zijn uitgaven te verminderen/verbeteren. 
