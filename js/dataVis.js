@@ -88,13 +88,13 @@ const nibudData = d3.csv('/data/AlternatiefDataset.csv')
 
 // filter code van Roy Csuka
 // https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
-function opschonenHuishouden(dataNibud ){
-  const huishoudenFilter = dataNibud.filter(dataNibud  => dataNibud.huishouden == huishoudenData);
-  console.log("filter huishouden", huishoudenFilter);
-  opschonenWonen(huishoudenFilter);
-};
+// function opschonenHuishouden(dataNibud ){
+//   const huishoudenFilter = dataNibud.filter(dataNibud  => dataNibud.huishouden == huishoudenData);
+//   console.log("filter huishouden", huishoudenFilter);
+//   opschonenWonen(huishoudenFilter);
+// };
 
-// //comment deze code aan als je werkt met de officiele dataset:
+// // //comment deze code aan als je werkt met de officiele dataset:
 // function householdFilterFunction(nibudData){
 //   const householdFilter = nibudData.filter(nibudData => nibudData.huishouden == huishoudenData);
 //   console.log("filter huishouden", householdFilter);
@@ -139,6 +139,8 @@ function removeArrayItemsFunction(incomeFilter){
 function percentCalculation(personalDataClean, nibudDataClean){
   const personalSpending = personalDataClean
   const nibudSpendingAdvice = nibudDataClean
+  console.log("est", personalData)
+
 
   const gasCalculation = Math.round(((personalSpending[0] / nibudSpendingAdvice[0]) - 1) * 100);
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
@@ -152,6 +154,8 @@ function percentCalculation(personalDataClean, nibudDataClean){
   const waterCalculation = Math.round(((personalSpending[2] / nibudSpendingAdvice[2]) - 1) * 100);
   if (waterCalculation >= 1000){water = waterCalculation / 10;} 
   else {water = waterCalculation};
+  console.log(water)
+  console.log(waterCalculation)
 
   const lokaleLastenCalculation = Math.round(((personalSpending[3] / nibudSpendingAdvice[3]) - 1) * 100);
   if (lokaleLastenCalculation >= 1000){lokaleLasten = lokaleLastenCalculation / 10;} 
@@ -172,6 +176,8 @@ function percentCalculation(personalDataClean, nibudDataClean){
   const kinderopvangCalculation = Math.round(((personalSpending[7] / nibudSpendingAdvice[7]) - 1) * 100);
   if (kinderopvangCalculation >= 1000){kinderopvang = kinderopvangCalculation / 10;} 
   else {kinderopvang = kinderopvangCalculation};
+  console.log(kinderopvangCalculation)
+  console.log(kinderopvang)
 
   const contributiesCalculation = Math.round(((personalSpending[8] / nibudSpendingAdvice[8]) - 1) * 100);
   if (contributiesCalculation >= 1000){contributies = contributiesCalculation / 10;} 
@@ -330,7 +336,7 @@ function renderBarChart(cleanData){
   // + zet stings om in nummers
   const width = +svg.attr('width');
   const height = +svg.attr('height');
-  const margin = {top: 50, right: 100, bottom: 50, left: 200};
+  const margin = {top: 100, right: 300, bottom: 50, left: 50};
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
   const tooltip = d3.select("body").append("div").attr("class", "toolTip");
@@ -392,7 +398,7 @@ function renderBarChart(cleanData){
     .attr("transform", "translate(" + xScale(0) + ",0)")
     .call(d3.axisLeft(yScale))
     .selectAll(".tick")
-    .style('font-size', '1.5em') 
+    // .style('font-size', '1.5em') 
     .filter(function(d, i){ return cleanData[i].bedrag < 0 })
 
   yAxis.selectAll('line')

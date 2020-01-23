@@ -63,53 +63,65 @@
           <legend>Vaste lasten</legend>
           <p>Hoeveel ben je kwijt in euro's per maand?</p>
 
-            <label for="input">Onderwijs</label>
-            <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-              <i class="fas fa-euro-sign" aria-hidden="true"></i>
-            </div>
-            
-            <label for="input">Elektriciteit</label>
-            <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-              <i class="fas fa-euro-sign" aria-hidden="true"></i>
-            </div>
-            
-            <label for="input">Lokale lasten</label>
-            <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-              <i class="fas fa-euro-sign" aria-hidden="true"></i>
-            </div>
-            
-            <label for="input">Vervoer</label>
-            <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-              <i class="fas fa-euro-sign" aria-hidden="true"></i>
-            </div>
-            
-            <label for="input">Contributies en abbonementen</label>
-            <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-              <i class="fas fa-euro-sign" aria-hidden="true"></i>
-            </div>
-            
             <label for="input">Gas</label>
             <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <input id="gas" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
               <i class="fas fa-euro-sign" aria-hidden="true"></i>
             </div>
-            
+
+            <label for="input">Elektriciteit</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="elektriciteit" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+
             <label for="input">Water</label>
             <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <input id="water" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+
+            <label for="input">Lokale lasten</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="lokaleLasten" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
               <i class="fas fa-euro-sign" aria-hidden="true"></i>
             </div>
             
             <label for="input">Telefoon, TV en Internet</label>
             <div class="inputWithIcon inputIconBg">
-              <input value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <input id="telefoonTvInternet" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
               <i class="fas fa-euro-sign" aria-hidden="true"></i>
             </div>
+            </div>
+            
+            <label for="input">Verzekeringen</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="verzekeringen" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+
+            <label for="input">Onderwijs</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="onderwijs" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+
+            <label for="input">Kinderopvang</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="kinderopvang" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+
+            <label for="input">Contributies en abbonementen</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="contributiesAbonnementen" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
+            </div>
+
+            <label for="input">Vervoer</label>
+            <div class="inputWithIcon inputIconBg">
+              <input id="vervoer" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+              <i class="fas fa-euro-sign" aria-hidden="true"></i>
             </div>
           </div>
           
@@ -123,33 +135,33 @@
           <legend>Uitgaven</legend>
           <p>Hoeveel was je kwijt in euro's afgelopen maand?</p>
           
-            <label for="input">Vrijetijdsuitgaven</label>
-          <div class="inputWithIcon inputIconBg">
-            <input id="vrijetijdsuitgaven" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-            <i class="fas fa-euro-sign" aria-hidden="true"></i>
-          </div>
-          
           <label for="input">Kleding en schoenen</label>
           <div class="inputWithIcon inputIconBg">
             <input id="kledingSchoenen" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
             <i class="fas fa-euro-sign" aria-hidden="true"></i>
           </div>
-          
-          <label for="input">Onderhoud huis en tuin</label>
-          <div class="inputWithIcon inputIconBg">
-            <input id="onderhoudHuisTuin" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
-            <i class="fas fa-euro-sign" aria-hidden="true"></i>
-          </div>
-          
+
           <label for="input">Inventaris</label>
           <div class="inputWithIcon inputIconBg">
             <input id="inventaris" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
             <i class="fas fa-euro-sign" aria-hidden="true"></i>
           </div>
-          
+
+          <label for="input">Onderhoud huis en tuin</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="onderhoudHuisTuin" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+
           <label for="input">Niet vergoede ziektekosten</label>
           <div class="inputWithIcon inputIconBg">
             <input id="nietVergoedeZiektekosten" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
+            <i class="fas fa-euro-sign" aria-hidden="true"></i>
+          </div>
+
+          <label for="input">Vrijetijdsuitgaven</label>
+          <div class="inputWithIcon inputIconBg">
+            <input id="vrijetijdsuitgaven" value="0" type="number" name="input" placeholder="Bijv. '200'" min="0" required>
             <i class="fas fa-euro-sign" aria-hidden="true"></i>
           </div>
           
