@@ -53,24 +53,48 @@ path.domain {
 }
 
 .datavis {
-    background-color: papayawhip;
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
+    background-color: purple; /* placeholder kleur! weghalen! */
 }
 
-
-/* html pagina */
+section.datavis_section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+}
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0em;
 }
 
+#muntLinks {
+    position: absolute;
+    margin-top: -8em;
+    width: 8em;
+}
+
+#muntRechts {
+    position: absolute;
+    margin-top: -6em;
+    width: 6em;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.datavis_section a {
+    padding: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.datavis_section a img {
+    width: 8em;
+}
+
 h1 {
     color: var(--mainBlauw);
-    font-weight: 600;
-    font-size: 2em;
-    margin: 0;
 }
 
 h1 span {
@@ -127,6 +151,8 @@ button {
     margin-left: 0em;
 }
 
+
+
 .intro {
     display: flex;
 	flex-direction: row;
@@ -147,10 +173,14 @@ button {
 }
 
 article.info-block {
-    position: absolute;
-    top: 0;
-    padding: 1em;
+    margin-top: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
+    max-height: 14em;
+    padding: 3em;
     background-color: var(--bgGrey);
+    color: var(--darkGrey);
+    max-width: 14em;
 }
 
 article.samenvatting {

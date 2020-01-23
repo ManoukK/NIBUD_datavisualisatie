@@ -1,8 +1,6 @@
-//hoi test
-
 //values uit de local storage ophalen om het vervolgens in een object te stoppen
 //https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm
-// het parsen van de local storage 
+// het parsen van de local storage https://theshravan.net/blog/storing-json-objects-in-html5-local-storage/
 //https://stackoverflow.com/questions/51173341/crossfilter-loading-a-json-file-from-localstorage
 // stap 1 van het formulier
 // geen parse gebruikt omdat het anders word gezien als nummers
@@ -90,6 +88,11 @@ const nibudData = d3.csv('/data/AlternatiefDataset.csv')
 
 // filter code van Roy Csuka
 // https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
+function opschonenHuishouden(dataNibud ){
+  const huishoudenFilter = dataNibud.filter(dataNibud  => dataNibud.huishouden == huishoudenData);
+  console.log("filter huishouden", huishoudenFilter);
+  opschonenWonen(huishoudenFilter);
+};
 
 // //comment deze code aan als je werkt met de officiele dataset:
 // function householdFilterFunction(nibudData){
@@ -332,6 +335,11 @@ function renderBarChart(cleanData){
   const innerHeight = height - margin.top - margin.bottom;
   const tooltip = d3.select("body").append("div").attr("class", "toolTip");
 
+// // concat brengt twee arrays samen in 1 array
+// //https://howchoo.com/g/mzbmyzi2zda/how-to-merge-two-arrays-in-javascript
+// const combinedArrays = schoneData.concat(resultsPersoonlijk);
+// console.log(combinedArrays);
+
   const xScale = d3.scaleLinear()
     // extent zorgt ervoor dat bedragen in de min kunnen staan. 
     // extent kijkt naar de laagste en hoogste waarde in de array
@@ -345,6 +353,20 @@ function renderBarChart(cleanData){
     .domain(cleanData.map(function(d){return d.post}))
     .range([0, innerHeight])
     .padding(0.2);
+
+  // //per post een bar maken
+  // const yScalePersoonlijk = d3.scaleBand()
+  // .domain(resultsPersoonlijk.map(function(d){return d.post}))
+  //   // .domain(xValue)
+  //   .range([0, innerHeight])
+  //   .padding(0.2);
+
+  //   //per post een bar maken
+  // const yScaleNibud = d3.scaleBand()
+  //   .domain(schoneData.map(function(d){return d.post}))
+  //   .range([0, innerHeight])
+  //   .padding(0.2);
+  
 
   //betere margin maken
   const g = svg.append('g')
