@@ -159,7 +159,6 @@ Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aa
 
 ## Documentatie in de wiki
 - Het proces van de data visualisatie: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Mijn-proces
-- Hoe werkt de bar chart: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Hoe-werkt-de-bar-chart
 
 ## Bronnenlijst
 #### Belangrijkste bronnen
