@@ -4,7 +4,7 @@
 > Let op! Voor de onlineversie word er een alternatieve dataset gebruikt. Het Nibud wilde niet dat de echte dataset waarmee wij werkte online kwam te staan dus hebben wij voor de onlineversie er zelf een gemaakt.  
 
 ## De opdracht 
-Voor deze opdracht hebben wij in een team gewerkt met drie mensen: Raven Lakerveld, Jasper Koenen en ik (Manouk Kappé). Jasper en Raven deden voornamelijk het visuele aspect van het concept en ik deed de technische kant. Later in het proces hebben zij mij ook geholpen met de website met html en css. 
+Voor deze opdracht hebben wij in een team gewerkt met drie mensen. Raven Lakerveld, Jasper Koenen en ik (Manouk Kappé). Jasper en Raven deden voornamelijk het visuele aspect van het concept en ik deed de technische kant. Later in het proces hebben zij mij ook geholpen met de website met html en css. 
 
 Wij hadden als opdrachtgever het Nibud. Zij helpen mensen die dreigen in de schulden te raken en mensen die al schulden hebben. 
 Zij wilde graag een online tool om mensen te helpen. Met de dataset die wij kregen kon je veel kanten op en wij besloten om een online tool te maken waarbij je een begroting kan maken van je uitgaven. Hieronder verder over het concept. 
@@ -14,7 +14,7 @@ Het liefst wilde zij een datavisualisatie hebben die gemaakt was in Tableau. Het
 ## Het concept 
 Ons concept heet Budget Boksen.
 
-##### Dit is de data visualisatie pagina van onze website. Dit is gemaakt in Adobe XD en niet in code
+#### Dit is de data visualisatie pagina van onze website. Dit is gemaakt in Adobe XD en niet in code
 ![Visualisatie – 21](https://user-images.githubusercontent.com/45541885/72887194-809e1600-3d0b-11ea-8347-cfb753f59698.jpg)
 
 Onze doelgroep voor dit concept is iemand die in de schulden dreigt te raken maar er nog niet diep in zit. Diegene heeft dan ook zelf een budget coach ingeschakeld en is bereid/gemotiveerd om zijn geldzaken weer op orde te hebben. 
@@ -23,10 +23,16 @@ Het doel met onze tool is om het gesprek te starten tussen de doelgroep en de bu
 
 Het concept zelf werkt als volgt: iemand gaan naar de budget coach toe en samen gaan zij naar onze website zij vullen het formulier in met de juiste bedragen/gegevens en vervolgens krijgen zij een grafiek te zien. In het grafiek zie je hoeveel procent je boven of onder zit ten opzichte van het advies van Nibud. Zo kan je zien of je relatief meer of minder uitgeeft dan wat er geadviseerd wordt. Onder het grafiek worden er tips getoond en kan de doelgroep samen met de budget coach bepalen wat hij die maand wilt bereiken en waar hij op moet letten. 
 
-##### Dit is de eind versie van de data visualisatie pagina van onze website
+#### Dit is de eind versie van de data visualisatie pagina van onze website
 - FOTO VAN WAT HIER BOVEN STAAT
 
 ## installatie 
+- via github 
+- d3.js
+- de dataset 
+
+## De dataset 
+=======
 Let op! Voor de onlineversie word er een alternatieve dataset gebruikt. Het Nibud wilde niet dat de echte dataset waarmee wij werkte online kwam te staan dus hebben wij voor de onlineversie er zelf een gemaakt. Wil je dit project gebruiken met de echte dataset vraag hier dan naar bij het Nibud. 
 
 In deze repo bovenin kun je dit project forken of downloaden. Dit doe je door op de groene knop te klikken. Als je dit project wilt gebruiken heb je D3.js nodig, jquery en de dataset. Voor meer informatie over de dataset vind je in het kopje hieronder. 
@@ -160,28 +166,19 @@ Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aa
 ## Documentatie in de wiki
 - Het proces van de data visualisatie: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Mijn-proces
 - Hoe werkt de bar chart: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Hoe-werkt-de-bar-chart
+- Hoe zit de dataset in elkaar: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/De-dataset-van-het-Nibud
 
 ## Bronnenlijst
-#### Belangrijkste bronnen
+Hier onder zie je een bronnenlijst met de belangrijkste of grootste elementen uit dit concept. Uiteraard heb ik ook veel kleine dingentjes op gezocht. Deze staan in de comments in de code vermeld. 
+
 - Het grafiek met negatieve en positieve waardes: https://bl.ocks.org/mbostock/2368837
 - Een basis grafiek van Curran: https://www.youtube.com/watch?v=NlBt-7PuaLk&list=PL9yYRbwpkykvOXrZumtZWbuaXWHvjD8gi&index=7
 - Local storage: https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
 - De dataset opschonen: Roy Csuka, https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
-- Animaties komen van Animista: https://animista.net/
-
-#### overige bronnen
-- Local storage begrijpen: https://www.youtube.com/watch?v=k8yJCeuP6I8 en https://www.youtube.com/watch?v=NxVCq4p0Kb0
-- Values opslaan in local storage:  https://stackoverflow.com/questions/23728626/localstorage-and-json-stringify-json-parse
-- Local storage waardes ophalen: https://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm
-- Local strorage parsen: https://stackoverflow.com/questions/51173341/crossfilter-loading-a-json-file-from-localstorage
-- Filteren binnen de dataset: https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
-- Items verwijderen uit een array: https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice
-- If else statement voor tegen errors: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-- bar chart maken op basis van local storage: https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work
 
 ## credits voor: 
-- Jasper Koenen, die veel html en css heeft geschreven voor dit project 
-- Raven Laverveld, Die mee hielp met html en css en de afbeeldingen en iconen heeft gemaakt
+- Jasper Koenen, die heel erg veel html en css heeft geschreven voor dit project 
+- Raven Laverveld, Die mee hielp met html en css en de afbeeldingen heeft gemaakt
 - Roy Csuka, die zijn opschoon code met mij wilde delen
 - Mamoun Othman, die in stack overflow mij heeft geholpen met een bar chart op basis van local storage (https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work)
 - Laurens Aarnoudse, die mij heeft geholpen met het bedenken van een berekening zodat ik alle procentuele cijfers kreeg, relatief gezien van wat het Nibud adviseert
