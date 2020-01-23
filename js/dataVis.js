@@ -322,7 +322,7 @@ function renderBarChart(cleanData){
   //sorteerd alle code van hoge naar lage waardes
   cleanData.sort(function(a, b) {return d3.descending(a.bedrag, b.bedrag)});
 
-  const svg = d3.select(".persoonlijk");
+  const svg = d3.select(".datavis");
 
   // + zet stings om in nummers
   const width = +svg.attr('width');
