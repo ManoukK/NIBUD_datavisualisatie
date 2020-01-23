@@ -24,7 +24,7 @@ Het doel met onze tool is om het gesprek te starten tussen de doelgroep en de bu
 Het concept zelf werkt als volgt: iemand gaan naar de budget coach toe en samen gaan zij naar onze website zij vullen het formulier in met de juiste bedragen/gegevens en vervolgens krijgen zij een grafiek te zien. In het grafiek zie je hoeveel procent je boven of onder zit ten opzichte van het advies van Nibud. Zo kan je zien of je relatief meer of minder uitgeeft dan wat er geadviseerd wordt. Onder het grafiek worden er tips getoond en kan de doelgroep samen met de budget coach bepalen wat hij die maand wilt bereiken en waar hij op moet letten. 
 
 ##### Dit is de eind versie van de data visualisatie pagina van onze website
-- FOTO VAN WAT HIER BOVEN STAAT
+![Schermafbeelding 2020-01-23 om 19 16 01](https://user-images.githubusercontent.com/45541885/73011617-df9b8200-3e14-11ea-82a8-5c112b3b9b05.png)
 
 ## installatie 
 Let op! Voor de onlineversie word er een alternatieve dataset gebruikt. Het Nibud wilde niet dat de echte dataset waarmee wij werkte online kwam te staan dus hebben wij voor de onlineversie er zelf een gemaakt. Wil je dit project gebruiken met de echte dataset vraag hier dan naar bij het Nibud. 
