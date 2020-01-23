@@ -177,6 +177,7 @@ Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aa
 - Items verwijderen uit een array: https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice
 - If else statement voor tegen errors: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 - bar chart maken op basis van local storage: https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work
+- Tooltip maken: https://bl.ocks.org/alandunning/274bf248fd0f362d64674920e85c1eb7
 
 ## credits voor: 
 - Jasper Koenen, die veel html en css heeft geschreven voor dit project 
