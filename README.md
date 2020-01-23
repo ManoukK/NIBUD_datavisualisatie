@@ -155,7 +155,7 @@ Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aa
 - [ ] Gepersonaliseerde tips 
 - [ ] Webpage met alle tips 
 - [ ] Beter stap 1 formulier (bijvoorbeeld aantal kinderen en huishouden gescheiden)
-- [ ] Animaties  
+- [x] Animaties  
 
 ## Documentatie in de wiki
 - Het proces van de data visualisatie: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Mijn-proces
