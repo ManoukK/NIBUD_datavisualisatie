@@ -1,12 +1,23 @@
-/* data visualisatie */
-.bar--positive {
-    fill: darkorange;
-}
+:root {
+    --mainOrange: #EEBC32;
+    --mainBlauw: #2F4EA4;
+    --lightBlauw: #566FB3;
+    --ctaBlauw: #2699FB;
+    --lightGrey: #F1F1F1;
+    --bgGrey: #EFEFEF;
+    --darkGrey: #707070;
+    --shadowGrey: #C4C4C4;
+    --snowWhite: #FAFAFA;
+    --errorRood: #FB2626;
+    --shadowBlauw: #007FEB;
+    
   
-.bar--negative {
-    fill: steelblue;
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
 }
 
+/* data visualisatie */
 .tick line {
     color: #707070;
     opacity: 0.3;
@@ -33,15 +44,42 @@ path.domain {
     color: #707070;
 }
 
+.bar--positive {
+    fill: var(--mainOrange);
+}
+  
+.bar--negative {
+    fill: var(--lightBlauw);
+}
+
+.datavis {
+    background-color: papayawhip;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+
 /* html pagina */
 body {
     font-family: 'Ubuntu', sans-serif;
+    margin: 0em;
+}
+
+h1 {
+    color: var(--mainBlauw);
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+}
+
+h1 span {
+    color: var(--mainOrange);
 }
 
 ul {
     list-style-type: none;
-    color: #707070;
-    padding: 0
+    padding: 0em;
 }
 
 img {
@@ -58,10 +96,14 @@ h2 {
     color: #F3B352;
 }
 
-li {
+.ul_tips {
     padding: 0;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    color: var(--darkGrey);
+    line-height: 1.5em;
+    -webkit-transform: translateX(-10000px);
+    transform: translateX(-10000px);
 }
 
 button {
@@ -77,10 +119,53 @@ button {
 }
 
 .buttoncontainer {
+    display: block;
     text-align: center;
+    margin-top: 0em;
+    margin-bottom: 5em;
+    margin-right: 0em;
+    margin-left: 0em;
 }
 
-div.kolom {
+.intro {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    background: var(--mainBlauw);
+}
+
+.intro img {
+    width: 10em;
+}
+
+#handschoen {
+    margin-top: -5em;
+    margin-left: 1em;
+}
+
+article.info-block {
+    position: absolute;
+    top: 0;
+    padding: 1em;
+    background-color: var(--bgGrey);
+}
+
+article.samenvatting {
+    display: flex;
+    flex-direction: column;
+    margin: 4em 0em;
+    background: var(--snowWhite);
+    border-radius: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 10em;
+}
+
+article.kolom {
     padding-right: 3em;
     padding-left: 3em;
     width: 280px;
@@ -88,5 +173,20 @@ div.kolom {
 
 
 hr {
-    color: #C4C4C4;
+    color: var(--shadowGrey);
+}
+
+footer {
+    margin-top: 3em;
+    width: 100%;
+    background-color: var(--mainBlauw);
+    display: flex;
+}
+
+footer a {
+    margin: auto auto;
+}
+
+footer a img {
+    width: 8em;
 }

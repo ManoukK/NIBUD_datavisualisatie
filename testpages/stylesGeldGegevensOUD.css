@@ -3,7 +3,7 @@
     --lichtPaarsBlauw: #566FB3;
     --PaarsBlauw: #2F4EA4;
     --Oranje: #EEBC32;
-    --donkerBlauw: #2699FB;
+    --shadowBlauw: #2699FB;
     --middelBlauw: #BCE0FD;
     --lichtBlauw: #F1F9FF;
     --wit: #ffffff;
@@ -32,7 +32,7 @@ form {
 }
 
 h1, h2 {
-    color: var(--donkerBlauw);
+    color: var(--shadowBlauw);
     font-size: var(--leesTekst);
     font-weight: 100;
     margin-top: 0em;
@@ -75,7 +75,7 @@ div {
 }
 
 .kindInput:checked ~ label {
-    background-color: var(--donkerBlauw);
+    background-color: var(--shadowBlauw);
     box-shadow: 0px 3px 0px #2699FB;
     border: none;
     color: var(--Snow);

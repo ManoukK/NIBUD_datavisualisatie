@@ -32,7 +32,7 @@ nav {
 }
 
 nav svg {
-    background-color: var(--donkerBlauw);
+    background-color: var(--shadowBlauw);
     margin-top: -1.5em;
 }
 
@@ -41,21 +41,14 @@ nav svg {
     text-transform: uppercase;
 }
 
-/* form {
-    position: absolute;
-    background-color: var(--wit);
-    left: 0em;
-    right: 0em;
-    box-shadow: 0px 4px 7px #2699FB29;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4em;
-} */
-
 fieldset {
     position: relative;
     margin: 2em;
     border: none;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 legend {
@@ -90,17 +83,16 @@ input {
 }
 
 input:active, input:focus {
-    box-shadow: 0px 4px 0px var(--donkerBlauw);
-    color: var(--donkerBlauw);
+    box-shadow: 0px 4px 0px var(--shadowBlauw);
+    color: var(--shadowBlauw);
     outline: 0;
     outline-color: transparent;
     outline-style: none;
 }
 
-
 #hoofdKnop {
     color: var(--wit);
-    background-color: var(--donkerBlauw);
+    background-color: var(--shadowBlauw);
     border-radius: 4px;
     box-shadow: 0px 3px 0px #007FEB;
     box-sizing: border-box;
@@ -133,7 +125,7 @@ input:active, input:focus {
 
 #subKnop {
     box-sizing: border-box;
-    color: var(--donkerBlauw);
+    color: var(--shadowBlauw);
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 1em;
@@ -203,7 +195,7 @@ select {
   
   .btn-next:hover {
     box-shadow: 0px 3px 0px var(--ctaBlauw);
-    background: var(--shadowBlauw) 0% 0% no-repeat padding-box;background: 
+    background: var(--shadowBlauw) 0% 0% no-repeat padding-box;
   }
   
   .btn-previous:hover {

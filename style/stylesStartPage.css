@@ -1,18 +1,22 @@
 :root {
-    --lichtPaarsBlauw: #566FB3;
-    --PaarsBlauw: #2F4EA4;
-    --Oranje: #EEBC32;
-    --donkerBlauw: #2699FB;
-    --middelBlauw: #BCE0FD;
-    --lichtBlauw: #F1F9FF;
-    --wit: #ffffff;
-    --zwart: #000000;
-    --donkerGrijs: #707070; /* placeholders in inputs */
-    --lichtGrijs: #C4C4C4; /* shadow for inputs */
-    --Snow: #F1F1F1; /* borders van inputs, net niet volledig wit*/
-    --hoofdTitel: 2rem;
-    --subTitel: 1.5rem;
-    --leesTekst: 1rem;
+    --mainOrange: #EEBC32;
+    --mainBlauw: #2F4EA4;
+    --lightBlauw: #566FB3;
+    --ctaBlauw: #2699FB;
+    --lightGrey: #F1F1F1;
+    --darkGrey: #707070;
+    --shadowGrey: #C4C4C4;
+    --snowWhite: #FAFAFA;
+    --errorRood: #FB2626;
+    --shadowBlauw: #007FEB;
+  
+    --hoofdTitel: 2em;
+    --subTitel: 1.5em;
+    --leesTekst: 1em;
+}
+
+body{
+    background-color: var(--mainBlauw);
 }
 
 img {
@@ -23,7 +27,7 @@ img {
 
 
 p {
-    color: var(--Snow);
+    color: var(--snowWhite);
     font-size: var(--leesTekst);
 }
 
