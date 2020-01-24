@@ -151,6 +151,9 @@ const procentenArray = [
 
 Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aan moest pakken dus heb ik het op deze manier geschreven. Het was voor mij allemaal erg nieuw en om het op deze manier te schrijven heb ik wel veel geleerd hoe het werkt. Als iemand een betere manier heeft om dit te schrijven hoor ik het graag!
 
+#### Wat doe ik met 0 waardes in de dataset?
+Om errors te voorkomen in het berekenen van de procenten zet ik de values die 0 zijn om in 1. Dit geldt voor de dataset van het Nibud maar ook wat iemand zelf invuld. Als ik de berekening doe met een value die 0 is geeft dat de error infinity. Als ik een berekening maak met de waarde 1 komt er uiteigenlijk 0% uit en vallen deze posten weg in de daat visualisatie, zoals we het willen.
+
 ## Features
 - [ ] Gepersonaliseerde tips 
 - [ ] Webpage met alle tips 
@@ -159,7 +162,6 @@ Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aa
 
 ## Documentatie in de wiki
 - Het proces van de data visualisatie: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Mijn-proces
-- Hoe werkt de bar chart: https://github.com/ManoukK/NIBUD_datavisualisatie/wiki/Hoe-werkt-de-bar-chart
 
 ## Bronnenlijst
 #### Belangrijkste bronnen
@@ -178,6 +180,7 @@ Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aa
 - Items verwijderen uit een array: https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice
 - If else statement voor tegen errors: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 - bar chart maken op basis van local storage: https://stackoverflow.com/questions/59736105/create-a-bar-chart-with-local-storage-data-drawing-the-bars-doesnt-work
+- Tooltip maken: https://bl.ocks.org/alandunning/274bf248fd0f362d64674920e85c1eb7
 
 ## credits voor: 
 - Jasper Koenen, die veel html en css heeft geschreven voor dit project 
