@@ -151,6 +151,9 @@ const procentenArray = [
 
 Deze code had misschien sneller en korter gekund maar ik wist niet hoe ik dat aan moest pakken dus heb ik het op deze manier geschreven. Het was voor mij allemaal erg nieuw en om het op deze manier te schrijven heb ik wel veel geleerd hoe het werkt. Als iemand een betere manier heeft om dit te schrijven hoor ik het graag!
 
+#### Wat doe ik met 0 waardes in de dataset?
+Om errors te voorkomen in het berekenen van de procenten zet ik de values die 0 zijn om in 1. Dit geldt voor de dataset van het Nibud maar ook wat iemand zelf invuld. Als ik de berekening doe met een value die 0 is geeft dat de error infinity. Als ik een berekening maak met de waarde 1 komt er uiteigenlijk 0% uit en vallen deze posten weg in de daat visualisatie, zoals we het willen.
+
 ## Features
 - [ ] Gepersonaliseerde tips 
 - [ ] Webpage met alle tips 
