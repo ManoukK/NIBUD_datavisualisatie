@@ -127,10 +127,9 @@ function removeArrayItemsFunction(incomeFilter){
   //verwijder totaal huishoudelijke uitgaven en overschot/tekort
   removeArrayItems.splice(17, 2);
 
-  const nibudDataClean = removeArrayItems.map(function(d){return d.bedrag});
-  const i = nibudDataClean.indexOf(0);
-  nibudDataClean[i] = 1;
-  
+  //https://stackoverflow.com/questions/5915789/how-to-replace-an-item-in-an-array-with-javascript/5915891
+  nibudDataClean = removeArrayItems.map(function(d) { return d.bedrag == 0 ? 1 : d.bedrag; });
+
   console.log("nieuwe array", nibudDataClean);
   // renderBarChart(personalData, nibudDataClean);
   percentCalculation(personalData, nibudDataClean);
@@ -141,6 +140,12 @@ function percentCalculation(personalDataClean, nibudDataClean){
   const nibudSpendingAdvice = nibudDataClean
   console.log("est", personalData)
 
+  // const eiegentest = personalDataClean.map(function(d){return d});
+  // const i = personalDataClean.indexOf(0);
+  // personalDataClean[i] = 1;
+
+  // console.log("teeeeest", personalDataClean)
+  // console.log("hooooooi", eiegentest)
 
   const gasCalculation = Math.round(((personalSpending[0] / nibudSpendingAdvice[0]) - 1) * 100);
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
