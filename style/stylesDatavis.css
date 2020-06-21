@@ -226,7 +226,7 @@ footer a img {
 }
 
 .rectBlue {
-    fill: var(--lightBlauw);
+    fill: var(--mainOrange);
 }
 
 .legend, .legend2 {
@@ -237,7 +237,7 @@ footer a img {
 
 .rectOrange {
     margin-top: 3em;
-    fill: var(--mainOrange);
+    fill: var(--lightBlauw);
 }
 
 .rectBlueText {

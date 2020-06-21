@@ -56,7 +56,7 @@ console.log("test", personalDataClean);
 
 // csv inladen nieuwe manier
 //comment deze code aan als je werkt met de officiele dataset:
-// const nibudData = d3.csv('/data/NibudDataset.csv')
+// const nibudData = d3.csv('../data/NibudDataset.csv')
 
 //comment deze code uit als je werkt met de officiele dataset:
 const nibudData = d3.csv('/data/AlternatiefDataset.csv')
@@ -75,7 +75,7 @@ const nibudData = d3.csv('/data/AlternatiefDataset.csv')
   })
   .then(nibudData  => {
     console.log("opgeschoonde data", nibudData)
-    //comment deze code aan als je werkt met de officiele dataset:
+    // comment deze code aan als je werkt met de officiele dataset:
     // householdFilterFunction(nibudData);
 
     //comment deze twee regels code uit als je werkt met de officiele dataset:
@@ -88,13 +88,7 @@ const nibudData = d3.csv('/data/AlternatiefDataset.csv')
 
 // filter code van Roy Csuka
 // https://github.com/RoyCsuka/nibud/blob/master/src/cleanData.js
-// function opschonenHuishouden(dataNibud ){
-//   const huishoudenFilter = dataNibud.filter(dataNibud  => dataNibud.huishouden == huishoudenData);
-//   console.log("filter huishouden", huishoudenFilter);
-//   opschonenWonen(huishoudenFilter);
-// };
-
-// // //comment deze code aan als je werkt met de officiele dataset:
+// //comment deze code aan als je werkt met de officiele dataset:
 // function householdFilterFunction(nibudData){
 //   const householdFilter = nibudData.filter(nibudData => nibudData.huishouden == huishoudenData);
 //   console.log("filter huishouden", householdFilter);
@@ -131,7 +125,9 @@ function removeArrayItemsFunction(incomeFilter){
   nibudDataClean = removeArrayItems.map(function(d) { return d.bedrag == 0 ? 1 : d.bedrag; });
 
   console.log("nieuwe array", nibudDataClean);
+  //zet deze uit als je met de echte dataset werkt
   // renderBarChart(personalData, nibudDataClean);
+  //zet deze aan als je met de echte dataset werkt
   percentCalculation(personalData, nibudDataClean);
 };
 
@@ -139,13 +135,6 @@ function percentCalculation(personalDataClean, nibudDataClean){
   const personalSpending = personalDataClean
   const nibudSpendingAdvice = nibudDataClean
   console.log("est", personalData)
-
-  // const eiegentest = personalDataClean.map(function(d){return d});
-  // const i = personalDataClean.indexOf(0);
-  // personalDataClean[i] = 1;
-
-  // console.log("teeeeest", personalDataClean)
-  // console.log("hooooooi", eiegentest)
 
   const gasCalculation = Math.round(((personalSpending[0] / nibudSpendingAdvice[0]) - 1) * 100);
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
